@@ -16,13 +16,12 @@ export function S02Contexto() {
 
         <FadeItem>
           <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-[1.05] tracking-[-0.015em] max-w-5xl">
-            El logo anterior decía{" "}
-            <em className="italic" style={{ color: "var(--muted)" }}>taller.</em>
-            {" "}El evento son{" "}
+            El logo anterior comunicaba{" "}
+            <em className="italic" style={{ color: "var(--muted)" }}>taller mecánico.</em>{" "}
+            La propuesta comunica{" "}
             <em className="italic" style={{ color: "var(--accent)" }}>
-              dos mundos de Baja
-            </em>{" "}
-            al mismo tiempo.
+              evento familiar de Baja California.
+            </em>
           </h2>
         </FadeItem>
 
@@ -39,14 +38,14 @@ export function S02Contexto() {
                 className="text-[10px] font-semibold tracking-[0.22em] uppercase mb-4"
                 style={{ color: "var(--muted)" }}
               >
-                Lo que pesaba antes
+                Identidad anterior
               </div>
               <ul className="flex flex-col gap-3 text-[15px] leading-relaxed">
                 {[
-                  "Negro plano, sin calor regional.",
-                  "Un solo auto genérico, sin familia.",
-                  "Tono taller mecánico, no evento.",
-                  "Estampa suelta, sin sistema.",
+                  "Paleta en negro, sin identidad regional.",
+                  "Un solo vehículo, sin narrativa familiar.",
+                  "Estética de taller mecánico.",
+                  "Pieza aislada, sin sistema de aplicación.",
                 ].map((t) => (
                   <li key={t} className="flex gap-3">
                     <span
@@ -72,14 +71,14 @@ export function S02Contexto() {
                 className="text-[10px] font-semibold tracking-[0.22em] uppercase mb-4"
                 style={{ color: "var(--accent)" }}
               >
-                Lo que debe decir ahora
+                Identidad propuesta
               </div>
               <ul className="flex flex-col gap-3 text-[15px] leading-relaxed">
                 {[
-                  "Mientras los niños viven la aventura, los papás deciden el próximo auto.",
-                  "Tres autos, tres zonas, un solo evento.",
-                  "Baja como territorio: Mexicali, Tijuana, Ensenada.",
-                  "Sistema que vive en lonas, redes, señalética y merch.",
+                  "Doble experiencia: aventura para hijos, decisión para padres.",
+                  "Tres vehículos que representan las tres zonas del evento.",
+                  "Baja California como territorio: Mexicali, Tijuana, Ensenada.",
+                  "Sistema aplicable en lonas, redes, señalética y merchandising.",
                 ].map((t) => (
                   <li key={t} className="flex gap-3">
                     <span

@@ -4,16 +4,16 @@ import { LogoImage } from "../ui/logo-image";
 
 const razones = [
   {
-    title: "Sol abanico",
-    desc: "La Baja es el sol. Lo reclamamos, no lo decoramos.",
+    title: "Sol",
+    desc: "Representa el clima y la identidad geográfica de Baja California.",
   },
   {
-    title: "Tres vehículos = tres zonas",
-    desc: "RZR, pickup y sedán. El sistema vive dentro del logo.",
+    title: "Tres vehículos",
+    desc: "Cada uno representa una zona del evento: familiar, VIP y off-road.",
   },
   {
-    title: "Chisel y horizonte",
-    desc: "AUTOSHOW grita con oficio. La Rumorosa y la palma anclan territorio, no sede.",
+    title: "Rumorosa y palma",
+    desc: "Referencia el territorio completo, no una sede específica.",
   },
 ];
 
@@ -35,9 +35,9 @@ export function S04Logo() {
 
           <FadeItem>
             <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-[1.05] tracking-[-0.015em]">
-              Un sistema completo{" "}
+              Un sistema de marca{" "}
               <em className="italic" style={{ color: "var(--accent)" }}>
-                en una sola pieza.
+                contenido en una sola pieza.
               </em>
             </h2>
           </FadeItem>

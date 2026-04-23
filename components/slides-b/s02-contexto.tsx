@@ -22,11 +22,11 @@ export function S02Contexto() {
             className="text-4xl sm:text-5xl md:text-6xl leading-[1.05] tracking-[-0.015em] max-w-5xl font-badge uppercase"
             style={{ color: "var(--accent)" }}
           >
-            El logo anterior era{" "}
-            <span style={{ color: "var(--muted)" }}>un punto.</span>
+            El logo anterior representaba{" "}
+            <span style={{ color: "var(--muted)" }}>una sede fija.</span>
             <br />
-            El evento es{" "}
-            <span style={{ color: "var(--stamp)" }}>una ruta.</span>
+            La propuesta representa{" "}
+            <span style={{ color: "var(--stamp)" }}>un recorrido regional.</span>
           </h2>
         </FadeItem>
 
@@ -53,10 +53,10 @@ export function S02Contexto() {
               </div>
               <ul className="flex flex-col gap-3 text-[15px] leading-relaxed">
                 {[
-                  "Logo amarrado al museo como sede fija.",
-                  "Un solo auto, sin narrativa.",
-                  "Tono taller mecánico, no evento.",
-                  "Estampa suelta, cada edición desde cero.",
+                  "Logo asociado al museo como sede fija.",
+                  "Un solo vehículo, sin narrativa.",
+                  "Estética de taller mecánico.",
+                  "Pieza aislada, sin continuidad entre ediciones.",
                 ].map((t) => (
                   <li key={t} className="flex gap-3">
                     <span
@@ -94,10 +94,10 @@ export function S02Contexto() {
               </div>
               <ul className="flex flex-col gap-3 text-[15px] leading-relaxed">
                 {[
-                  "La Baja como territorio: Mexicali, Tijuana, Ensenada.",
-                  "El evento es una ruta, no una sede.",
-                  "Escudo vial: señal clara, sistema a 10 años.",
-                  "Cada edición es una ruta numerada: 26, 27, 28.",
+                  "Baja California como territorio: Mexicali, Tijuana, Ensenada.",
+                  "El evento se entiende como un recorrido, no como una sede.",
+                  "Escudo vial de lectura rápida y sistema proyectado a 10 años.",
+                  "Cada edición se identifica con un número de ruta: 26, 27, 28.",
                 ].map((t) => (
                   <li key={t} className="flex gap-3">
                     <span

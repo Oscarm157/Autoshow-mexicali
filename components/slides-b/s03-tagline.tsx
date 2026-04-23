@@ -32,8 +32,8 @@ export function S03Tagline() {
               className="font-badge uppercase text-[44px] sm:text-[68px] md:text-[92px] leading-[0.95] tracking-[0.02em] max-w-5xl"
               style={{ color: "var(--accent)" }}
             >
-              <HeroWord delay={0.15}>Mientras </HeroWord>
-              <HeroWord delay={0.3}>ellos </HeroWord>
+              <HeroWord delay={0.15}>Mientras</HeroWord>{" "}
+              <HeroWord delay={0.3}>ellos</HeroWord>{" "}
               <HeroWord delay={0.45}>exploran,</HeroWord>
               <br />
               <HeroWord delay={0.7}>
@@ -56,7 +56,7 @@ export function S03Tagline() {
                   Comercial
                 </span>
                 <p className="text-sm sm:text-base leading-relaxed" style={{ color: "var(--foreground)" }}>
-                  Todas las opciones. Todo un sábado. Toda la familia.
+                  Todas las opciones. Toda la familia. En un solo día.
                 </p>
               </div>
               <div className="flex flex-col gap-2 items-center sm:items-start">

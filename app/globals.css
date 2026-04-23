@@ -96,6 +96,11 @@ em, i {
   letter-spacing: -0.02em;
 }
 
+.hero-word {
+  display: inline-block;
+  white-space: pre;
+}
+
 .font-badge {
   font-family: var(--font-badge);
   letter-spacing: 0.02em;

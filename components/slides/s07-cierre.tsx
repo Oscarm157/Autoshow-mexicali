@@ -23,8 +23,8 @@ export function S07Cierre() {
               className="text-[40px] sm:text-[64px] md:text-[88px] leading-[1.05] tracking-[-0.02em] font-bold max-w-5xl"
               style={{ fontFamily: "var(--font-display)" }}
             >
-              <HeroWord delay={0.15}>Mientras </HeroWord>
-              <HeroWord delay={0.3}>ellos </HeroWord>
+              <HeroWord delay={0.15}>Mientras</HeroWord>{" "}
+              <HeroWord delay={0.3}>ellos</HeroWord>{" "}
               <HeroWord delay={0.45}>exploran,</HeroWord>
               <br />
               <HeroWord delay={0.7}>
@@ -44,7 +44,7 @@ export function S07Cierre() {
               className="text-2xl sm:text-3xl font-semibold"
               style={{ color: "var(--foreground)" }}
             >
-              ¿Avanzamos?
+              Quedamos a la espera de sus comentarios.
             </p>
           </FadeItem>
         </FadeStack>

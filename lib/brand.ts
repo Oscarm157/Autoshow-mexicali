@@ -4,7 +4,7 @@ export const brand = {
   agency: "Bravo Publicidad",
   edition: "2026",
   taglineMain: "Mientras ellos exploran, tú decides.",
-  taglineCommercial: "Todas las opciones. Todo un sábado. Toda la familia.",
+  taglineCommercial: "Todas las opciones. Toda la familia. En un solo día.",
   hook: "Regístrate antes del evento y participa por beneficios exclusivos.",
   insight:
     "Este evento no es un autoshow donde llevas a tus hijos. Son dos experiencias premium al mismo tiempo: mientras los niños viven la aventura, los papás deciden el auto que los va a llevar a la próxima.",
@@ -41,7 +41,7 @@ export const paradas = [
     name: "Paso Familiar",
     subtitle: "Vehículos familiares y comerciales",
     vehicle: "Pickup, SUV, sedán de volumen",
-    tone: "La primera parada. Accesible, cálida, cotidiana.",
+    tone: "Primera parada del recorrido. Zona accesible para el público general.",
     icon: "directions_car",
   },
   {
@@ -50,7 +50,7 @@ export const paradas = [
     name: "Mirador VIP",
     subtitle: "Vehículos de lujo",
     vehicle: "Sedán premium, exóticos, importados",
-    tone: "El punto alto del recorrido. Sobrio, silencioso, premium.",
+    tone: "Segunda parada. Zona premium con tratamiento exclusivo.",
     icon: "diamond",
   },
   {
@@ -59,7 +59,7 @@ export const paradas = [
     name: "Desvío Off-Road",
     subtitle: "4x4 y desierto",
     vehicle: "RZR, pickup 4x4, off-roaders",
-    tone: "La salida al desierto. Polvo, adrenalina, desvío.",
+    tone: "Tercera parada. Zona de aventura en terreno desértico.",
     icon: "terrain",
   },
 ];
@@ -91,7 +91,7 @@ export const zones = [
     secondary: "#E07856",
     accent: "#1E3A5F",
     text: "#1E3A5F",
-    tone: "Accesible, cálido, cotidiano.",
+    tone: "Zona accesible para el público general.",
     icon: "directions_car",
   },
   {
@@ -103,7 +103,7 @@ export const zones = [
     secondary: "#D4AF37",
     accent: "#F7EFE0",
     text: "#F7EFE0",
-    tone: "Sofisticado, sobrio, premium.",
+    tone: "Zona premium con tratamiento exclusivo.",
     icon: "diamond",
   },
   {
@@ -115,7 +115,7 @@ export const zones = [
     secondary: "#D4B896",
     accent: "#F7EFE0",
     text: "#F7EFE0",
-    tone: "Aventurero, terroso, robusto.",
+    tone: "Zona de aventura y terreno desértico.",
     icon: "terrain",
   },
 ];

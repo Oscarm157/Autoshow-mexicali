@@ -32,9 +32,9 @@ export function S01Hero() {
               className="font-badge leading-none text-[44px] sm:text-[64px] md:text-[88px] tracking-[0.04em] uppercase max-w-4xl"
               style={{ color: "var(--accent)" }}
             >
-              <HeroWord delay={0.5}>La Baja</HeroWord>{" "}
+              <HeroWord delay={0.5}>Baja California</HeroWord>{" "}
               <HeroWord delay={0.75}>
-                <span style={{ color: "var(--muted)" }}>en ruta.</span>
+                <span style={{ color: "var(--muted)" }}>como territorio.</span>
               </HeroWord>
             </h1>
           </FadeItem>
@@ -66,7 +66,7 @@ export function S01Hero() {
         className="absolute bottom-8 left-0 right-0 text-center font-badge text-[10px] uppercase tracking-[0.36em]"
         style={{ color: "var(--muted)" }}
       >
-        Presiona → para salir a ruta
+        Avanzar con la flecha derecha
       </div>
     </Slide>
   );

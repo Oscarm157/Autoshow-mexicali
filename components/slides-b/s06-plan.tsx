@@ -5,33 +5,33 @@ const tramos = [
   {
     km: "KM 01",
     name: "Escudo",
-    status: "Ahora",
+    status: "Etapa actual",
     items: [
-      "Shield master sin año, dos rutas finalistas.",
-      "Número de edición integrado: RUTA 26.",
-      "Sistema de paradas heredado del escudo.",
+      "Escudo master sin año. Dos rutas finalistas a evaluación.",
+      "Número de edición RUTA 26 integrado en el escudo.",
+      "Sistema de tres paradas derivado del escudo.",
     ],
     active: true,
   },
   {
     km: "KM 02",
     name: "Invitación",
-    status: "Siguiente",
+    status: "Siguiente etapa",
     items: [
-      "Digital: email, WhatsApp, stories con señal RUTA 26.",
-      "Opcional impresa tipo ticket de peaje.",
-      "Gancho: registro, beneficio al cruzar la primera parada.",
+      "Versión digital para email, WhatsApp y stories con identidad RUTA 26.",
+      "Versión impresa opcional con formato de ticket de peaje.",
+      "Llamada a la acción con registro previo y beneficio exclusivo.",
     ],
     active: false,
   },
   {
     km: "KM 03",
     name: "Sistema completo",
-    status: "Rollout",
+    status: "Implementación",
     items: [
-      "Lonas tipo señalética vial en fachada y direccionales.",
-      "Redes con plantillas de ruta (pre, durante, post).",
-      "Pulseras numeradas por parada, merch con escudo.",
+      "Señalética vial para fachada, direccionales y agencias aliadas.",
+      "Plantillas de redes para fases previa, durante y posterior.",
+      "Pulseras numeradas por parada y merchandising con escudo.",
     ],
     active: false,
   },
@@ -58,15 +58,15 @@ export function S06Plan() {
             className="font-badge uppercase text-4xl sm:text-5xl md:text-6xl leading-[1.05] tracking-[0.02em] max-w-4xl"
             style={{ color: "var(--accent)" }}
           >
-            Una marca a{" "}
+            Una marca diseñada para{" "}
             <span style={{ color: "var(--stamp)" }}>10 años.</span>{" "}
-            Un rollout en tres tramos.
+            Implementación en tres etapas.
           </h2>
         </FadeItem>
 
         <FadeItem>
           <p className="max-w-3xl text-base leading-relaxed" style={{ color: "var(--muted)" }}>
-            El escudo no lleva año. El número de ruta sí: RUTA 26 se vuelve RUTA 27, RUTA 28. El sistema de paradas absorbe cada edición sin tocar el master.
+            El escudo master no incluye año. El número de ruta sí: RUTA 26 se actualiza a RUTA 27 y RUTA 28 en ediciones siguientes. El sistema de paradas absorbe cada edición sin modificar el escudo.
           </p>
         </FadeItem>
 

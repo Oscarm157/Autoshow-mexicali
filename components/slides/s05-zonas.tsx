@@ -26,7 +26,7 @@ export function S05Zonas() {
 
         <FadeItem>
           <p className="max-w-3xl text-base leading-relaxed" style={{ color: "var(--muted)" }}>
-            La paleta master no es un muestrario decorativo. Se reparte entre las tres zonas del evento: cada una hereda el ADN del logo con su propio tratamiento cromático.
+            La paleta de marca se distribuye entre las tres zonas del evento. Cada zona conserva la identidad del logo con su propio tratamiento cromático.
           </p>
         </FadeItem>
 
@@ -100,7 +100,7 @@ export function S05Zonas() {
             className="text-center text-sm italic max-w-3xl mx-auto"
             style={{ color: "var(--muted)" }}
           >
-            El color cambia. El ADN del master se mantiene.
+            El color se adapta a cada zona. La identidad del logo se mantiene.
           </p>
         </FadeItem>
       </FadeStack>

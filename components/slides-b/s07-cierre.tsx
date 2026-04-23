@@ -37,8 +37,8 @@ export function S07Cierre() {
               className="font-badge uppercase text-[36px] sm:text-[56px] md:text-[76px] leading-[0.95] tracking-[0.02em] max-w-5xl"
               style={{ color: "var(--accent)" }}
             >
-              <HeroWord delay={0.4}>Mientras </HeroWord>
-              <HeroWord delay={0.55}>ellos </HeroWord>
+              <HeroWord delay={0.4}>Mientras</HeroWord>{" "}
+              <HeroWord delay={0.55}>ellos</HeroWord>{" "}
               <HeroWord delay={0.7}>exploran,</HeroWord>
               <br />
               <HeroWord delay={0.9}>
@@ -56,7 +56,7 @@ export function S07Cierre() {
               className="font-badge uppercase text-2xl sm:text-3xl tracking-[0.12em]"
               style={{ color: "var(--foreground)" }}
             >
-              ¿Salimos a ruta?
+              Quedamos a la espera de sus comentarios.
             </p>
           </FadeItem>
         </FadeStack>

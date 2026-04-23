@@ -43,7 +43,7 @@ export function S01Hero() {
 
           <FadeItem>
             <p className="max-w-2xl text-lg sm:text-xl leading-relaxed" style={{ color: "var(--muted)" }}>
-              Sistema visual evergreen.{" "}
+              Propuesta de sistema de marca para la edición 2026.{" "}
               <em className="italic" style={{ color: "var(--accent)" }}>
                 {brand.taglineMain}
               </em>
@@ -68,7 +68,7 @@ export function S01Hero() {
         className="absolute bottom-8 left-0 right-0 text-center text-[10px] uppercase tracking-[0.28em]"
         style={{ color: "var(--muted)" }}
       >
-        Presiona → para comenzar
+        Avanzar con la flecha derecha
       </div>
     </Slide>
   );

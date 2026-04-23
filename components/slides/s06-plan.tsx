@@ -5,33 +5,33 @@ const steps = [
   {
     n: "01",
     name: "Logo",
-    status: "Ahora",
+    status: "Etapa actual",
     items: [
-      "Master sin año, dos rutas finalistas.",
-      "Tag 2026 separable.",
-      "Derivación cromática a tres zonas.",
+      "Logo master sin año. Dos rutas finalistas a evaluación.",
+      "Tag anual 2026 separable del master.",
+      "Derivación cromática para las tres zonas del evento.",
     ],
     active: true,
   },
   {
     n: "02",
     name: "Invitación",
-    status: "Siguiente",
+    status: "Siguiente etapa",
     items: [
-      "Digital: email, WhatsApp, stories.",
-      "Opcional impresa para agencias.",
-      "Gancho: registro, beneficio exclusivo.",
+      "Versión digital para email, WhatsApp y stories.",
+      "Versión impresa opcional para agencias aliadas.",
+      "Llamada a la acción con registro previo y beneficio exclusivo.",
     ],
     active: false,
   },
   {
     n: "03",
     name: "Sistema completo",
-    status: "Rollout",
+    status: "Implementación",
     items: [
-      "Lonas: fachada, direccionales, agencias aliadas.",
-      "Redes: plantillas pre, during, post.",
-      "Señalética, pulseras y merch por zona.",
+      "Lonas de fachada, direccionales y agencias aliadas.",
+      "Plantillas de redes para fases previa, durante y posterior.",
+      "Señalética, pulseras y merchandising por zona.",
     ],
     active: false,
   },
@@ -52,17 +52,17 @@ export function S06Plan() {
 
         <FadeItem>
           <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-[1.05] tracking-[-0.015em] max-w-4xl">
-            Una marca a{" "}
+            Una marca diseñada para{" "}
             <em className="italic" style={{ color: "var(--accent)" }}>
               10 años.
             </em>{" "}
-            Un rollout en tres pasos.
+            Implementación en tres etapas.
           </h2>
         </FadeItem>
 
         <FadeItem>
           <p className="max-w-3xl text-base leading-relaxed" style={{ color: "var(--muted)" }}>
-            El master no lleva año. El tag 2026 se separa y se rediseña cuando toque. El sistema de zonas absorbe cada edición sin tocar el logo.
+            El logo master no incluye año. El tag 2026 es una pieza separable que se actualiza cada edición. El sistema de zonas absorbe cada edición sin modificar el logo.
           </p>
         </FadeItem>
 

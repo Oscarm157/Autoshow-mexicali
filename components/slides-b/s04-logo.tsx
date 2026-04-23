@@ -5,18 +5,18 @@ import { RutaShield } from "../ui/ruta-shield";
 const razones = [
   {
     num: "I",
-    title: "Un escudo, no un cartel",
-    desc: "Forma reconocible de lejos. La misma lógica de una señal de carretera: se lee en un segundo.",
+    title: "Forma de escudo",
+    desc: "Se lee de lejos, como una señal de carretera.",
   },
   {
     num: "II",
-    title: "Número de ruta evergreen",
-    desc: "RUTA 26, RUTA 27, RUTA 28. El año se convierte en identidad, no en fecha desechable.",
+    title: "Número de ruta",
+    desc: "RUTA 26, RUTA 27, RUTA 28. El año es parte del logo.",
   },
   {
     num: "III",
-    title: "Baja, no Mexicali",
-    desc: "El escudo dice BAJA. El evento puede salir de Mexicali, Tijuana o Ensenada sin renombrarse.",
+    title: "Dice BAJA",
+    desc: "Funciona para Mexicali, Tijuana o Ensenada sin renombrarse.",
   },
 ];
 

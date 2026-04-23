@@ -30,7 +30,7 @@ export function S05Paradas() {
 
         <FadeItem>
           <p className="max-w-3xl text-base leading-relaxed" style={{ color: "var(--muted)" }}>
-            El recorrido sustituye al mapa de zonas. Cada parada es un kilómetro del evento, un tramo reconocible, con señalética propia. El visitante no elige entre áreas, avanza por la ruta.
+            El evento se organiza como un recorrido con tres paradas. Cada parada representa una zona con su propia señalética y experiencia. El visitante avanza por la ruta en vez de elegir entre áreas separadas.
           </p>
         </FadeItem>
 
@@ -116,7 +116,7 @@ export function S05Paradas() {
             className="text-center text-sm italic max-w-3xl mx-auto"
             style={{ color: "var(--muted)", fontFamily: "var(--font-display)" }}
           >
-            La ruta cambia de tramo. El escudo se mantiene.
+            El tramo se adapta a cada parada. El escudo se mantiene.
           </p>
         </FadeItem>
       </FadeStack>
