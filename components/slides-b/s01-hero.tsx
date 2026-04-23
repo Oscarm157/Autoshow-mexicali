@@ -1,6 +1,5 @@
 import { Slide } from "../slide";
-import { FadeStack, FadeItem, HeroWord, ScaleIn } from "../ui/motion-primitives";
-import { RutaBLogo } from "../ui/ruta-b-logo";
+import { FadeStack, FadeItem, HeroWord } from "../ui/motion-primitives";
 import { brand, rutas } from "@/lib/brand";
 
 export function S01Hero() {
@@ -22,10 +21,6 @@ export function S01Hero() {
               <span className="w-10 h-[1px]" style={{ background: "var(--accent)" }} />
             </div>
           </FadeItem>
-
-          <ScaleIn delay={0.2}>
-            <RutaBLogo size={360} />
-          </ScaleIn>
 
           <FadeItem>
             <h1
