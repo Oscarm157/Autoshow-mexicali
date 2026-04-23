@@ -4,7 +4,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Autoshow Mexicali · Propuesta de marca",
   description:
-    "Sistema visual evergreen para Autoshow Mexicali. Propuesta Ruta A — Sunbelt Family. Bravo Publicidad.",
+    "Sistema visual evergreen para Autoshow Mexicali. Dos rutas: Sunbelt Family y Baja Badge. Bravo Publicidad.",
 };
 
 export default function RootLayout({
@@ -19,7 +19,7 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link
           rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Archivo+Black&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Archivo+Black&family=Oswald:wght@400;500;600;700&display=swap"
         />
         <link
           rel="stylesheet"

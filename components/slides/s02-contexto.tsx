@@ -1,7 +1,7 @@
 import { Slide } from "../slide";
 import { FadeStack, FadeItem } from "../ui/motion-primitives";
 
-export function S02Diagnostico() {
+export function S02Contexto() {
   return (
     <Slide mode="light">
       <FadeStack className="flex flex-col gap-10">
@@ -15,16 +15,19 @@ export function S02Diagnostico() {
         </FadeItem>
 
         <FadeItem>
-          <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-[1.05] tracking-[-0.015em]">
-            El logo anterior decía <em className="italic" style={{ color: "var(--muted)" }}>taller.</em>
-            <br />
-            El nuevo debe decir{" "}
-            <em className="italic" style={{ color: "var(--accent)" }}>evento.</em>
+          <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-[1.05] tracking-[-0.015em] max-w-5xl">
+            El logo anterior decía{" "}
+            <em className="italic" style={{ color: "var(--muted)" }}>taller.</em>
+            {" "}El evento son{" "}
+            <em className="italic" style={{ color: "var(--accent)" }}>
+              dos mundos de Baja
+            </em>{" "}
+            al mismo tiempo.
           </h2>
         </FadeItem>
 
         <FadeItem>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
             <div
               className="rounded-2xl p-8 border"
               style={{
@@ -36,14 +39,14 @@ export function S02Diagnostico() {
                 className="text-[10px] font-semibold tracking-[0.22em] uppercase mb-4"
                 style={{ color: "var(--muted)" }}
               >
-                Lo que leía antes
+                Lo que pesaba antes
               </div>
               <ul className="flex flex-col gap-3 text-[15px] leading-relaxed">
                 {[
-                  "Negro pesado que apagaba cualquier color.",
-                  "Un solo auto genérico, sin narrativa familiar.",
-                  "Estética de taller mecánico / velocidad agresiva.",
-                  "Logo sin sistema: solo servía como estampa.",
+                  "Negro plano, sin calor regional.",
+                  "Un solo auto genérico, sin familia.",
+                  "Tono taller mecánico, no evento.",
+                  "Estampa suelta, sin sistema.",
                 ].map((t) => (
                   <li key={t} className="flex gap-3">
                     <span
@@ -61,7 +64,8 @@ export function S02Diagnostico() {
               style={{
                 background: "var(--card)",
                 borderColor: "var(--accent)",
-                boxShadow: "0 0 0 1px var(--accent), 0 20px 40px -12px rgba(255,107,53,0.20)",
+                boxShadow:
+                  "0 0 0 1px var(--accent), 0 20px 40px -12px rgba(255,107,53,0.16)",
               }}
             >
               <div
@@ -72,9 +76,9 @@ export function S02Diagnostico() {
               </div>
               <ul className="flex flex-col gap-3 text-[15px] leading-relaxed">
                 {[
-                  "Calor Mexicali: sol como héroe, no ornamento.",
-                  "Tres autos = tres zonas = un solo evento.",
-                  "Experiencia familiar visible, no declarada.",
+                  "Mientras los niños viven la aventura, los papás deciden el próximo auto.",
+                  "Tres autos, tres zonas, un solo evento.",
+                  "Baja como territorio: Mexicali, Tijuana, Ensenada.",
                   "Sistema que vive en lonas, redes, señalética y merch.",
                 ].map((t) => (
                   <li key={t} className="flex gap-3">

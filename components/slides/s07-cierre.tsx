@@ -1,24 +1,18 @@
 import { Slide } from "../slide";
 import { FadeStack, FadeItem, HeroWord } from "../ui/motion-primitives";
 
-export function S12Cierre() {
+export function S07Cierre() {
   return (
     <Slide mode="dark" className="relative overflow-hidden">
-      <div
-        className="absolute inset-0 pointer-events-none"
-        style={{
-          background:
-            "radial-gradient(ellipse 1200px 900px at 50% 120%, rgba(255,107,53,0.30) 0%, rgba(255,201,60,0.12) 35%, transparent 65%)",
-        }}
-      />
-      <div className="absolute inset-0 warm-grid opacity-40 pointer-events-none" />
+      <div className="absolute inset-0 sun-bg-dark pointer-events-none" />
+      <div className="absolute inset-0 warm-grid opacity-30 pointer-events-none" />
 
       <div className="relative z-10 flex flex-col items-center text-center gap-12">
         <FadeStack className="flex flex-col gap-12 items-center">
           <FadeItem>
             <span
               className="inline-block text-[11px] font-semibold tracking-[0.28em] uppercase"
-              style={{ color: "var(--accent-light)" }}
+              style={{ color: "var(--accent)" }}
             >
               Cierre
             </span>
@@ -42,10 +36,7 @@ export function S12Cierre() {
           </FadeItem>
 
           <FadeItem>
-            <div
-              className="w-16 h-[2px]"
-              style={{ background: "var(--accent)" }}
-            />
+            <div className="w-16 h-[2px]" style={{ background: "var(--accent)" }} />
           </FadeItem>
 
           <FadeItem>
@@ -59,15 +50,10 @@ export function S12Cierre() {
         </FadeStack>
       </div>
 
-      <div
-        className="absolute bottom-10 left-0 right-0 text-center"
-      >
+      <div className="absolute bottom-10 left-0 right-0 text-center">
         <div className="flex items-center justify-center gap-3 text-[10px] uppercase tracking-[0.28em]">
           <span style={{ color: "var(--muted-light)" }}>Propuesta por</span>
-          <span
-            className="font-semibold"
-            style={{ color: "var(--accent-light)" }}
-          >
+          <span className="font-semibold" style={{ color: "var(--accent)" }}>
             Bravo Publicidad
           </span>
           <span style={{ color: "var(--muted-light)" }}>·</span>

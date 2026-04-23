@@ -1,24 +1,18 @@
 import { Slide } from "../slide";
 import { FadeStack, FadeItem, HeroWord } from "../ui/motion-primitives";
 
-export function S04Tagline() {
+export function S03Tagline() {
   return (
     <Slide mode="dark" className="relative overflow-hidden">
-      <div
-        className="absolute inset-0 pointer-events-none"
-        style={{
-          background:
-            "radial-gradient(ellipse 1200px 800px at 50% 50%, rgba(255,107,53,0.18) 0%, transparent 60%)",
-        }}
-      />
-      <div className="absolute inset-0 warm-grid opacity-30 pointer-events-none" />
+      <div className="absolute inset-0 sun-bg-dark pointer-events-none" />
+      <div className="absolute inset-0 warm-grid opacity-25 pointer-events-none" />
 
       <div className="relative z-10 flex flex-col gap-14 items-center text-center">
         <FadeStack className="flex flex-col gap-12 items-center">
           <FadeItem>
             <span
               className="inline-block text-[11px] font-semibold tracking-[0.28em] uppercase"
-              style={{ color: "var(--accent-light)" }}
+              style={{ color: "var(--accent)" }}
             >
               Tagline principal
             </span>
@@ -34,10 +28,7 @@ export function S04Tagline() {
               <HeroWord delay={0.45}>exploran,</HeroWord>
               <br />
               <HeroWord delay={0.7}>
-                <em
-                  className="italic"
-                  style={{ color: "var(--accent)" }}
-                >
+                <em className="italic" style={{ color: "var(--accent)" }}>
                   tú decides.
                 </em>
               </HeroWord>
@@ -49,24 +40,23 @@ export function S04Tagline() {
               <div className="flex flex-col gap-2 text-left">
                 <span
                   className="text-[10px] font-semibold tracking-[0.22em] uppercase"
-                  style={{ color: "var(--accent-light)" }}
+                  style={{ color: "var(--accent)" }}
                 >
-                  Tagline comercial
+                  Comercial
                 </span>
-                <p className="text-sm sm:text-base leading-relaxed text-muted">
+                <p className="text-sm sm:text-base leading-relaxed" style={{ color: "var(--muted)" }}>
                   Todas las opciones. Todo un sábado. Toda la familia.
                 </p>
               </div>
               <div className="flex flex-col gap-2 text-left">
                 <span
                   className="text-[10px] font-semibold tracking-[0.22em] uppercase"
-                  style={{ color: "var(--accent-light)" }}
+                  style={{ color: "var(--accent)" }}
                 >
-                  Gancho de conversión
+                  Gancho
                 </span>
-                <p className="text-sm sm:text-base leading-relaxed text-muted">
-                  Regístrate antes del evento y participa por beneficios
-                  exclusivos.
+                <p className="text-sm sm:text-base leading-relaxed" style={{ color: "var(--muted)" }}>
+                  Regístrate antes del evento y participa por beneficios exclusivos.
                 </p>
               </div>
             </div>

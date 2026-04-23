@@ -1,16 +1,26 @@
 "use client";
 
 import { useState, useEffect, useCallback, useRef } from "react";
+import Link from "next/link";
 
 interface SlidesDeckProps {
   children: React.ReactNode[];
   storageKey?: string;
+  ruta?: "a" | "b";
 }
 
 export function SlidesDeck({
   children,
-  storageKey = "autoshow-mexicali-slide",
+  storageKey,
+  ruta = "a",
 }: SlidesDeckProps) {
+  const effectiveStorageKey =
+    storageKey ?? `autoshow-mexicali-slide-${ruta}`;
+  const rutaLabel = ruta === "a" ? "Sunbelt Family" : "Ruta Baja";
+  const otherRuta = ruta === "a" ? "b" : "a";
+  const otherRutaLabel = ruta === "a" ? "Ruta Baja" : "Sunbelt Family";
+  const otherRutaHref = ruta === "a" ? "/ruta-b" : "/";
+  const wordmarkAccent = ruta === "a" ? "var(--accent)" : "var(--stamp)";
   const [current, setCurrent] = useState(0);
   const [isFullscreen, setIsFullscreen] = useState(false);
   const [mounted, setMounted] = useState(false);
@@ -20,10 +30,10 @@ export function SlidesDeck({
   const total = children.length;
 
   useEffect(() => {
-    const saved = sessionStorage.getItem(storageKey);
+    const saved = sessionStorage.getItem(effectiveStorageKey);
     if (saved) setCurrent(parseInt(saved, 10));
     setMounted(true);
-  }, [storageKey]);
+  }, [effectiveStorageKey]);
 
   const goTo = useCallback(
     (index: number) => {
@@ -37,8 +47,8 @@ export function SlidesDeck({
   const prev = useCallback(() => goTo(current - 1), [current, goTo]);
 
   useEffect(() => {
-    if (mounted) sessionStorage.setItem(storageKey, String(current));
-  }, [current, mounted, storageKey]);
+    if (mounted) sessionStorage.setItem(effectiveStorageKey, String(current));
+  }, [current, mounted, effectiveStorageKey]);
 
   const toggleFullscreen = useCallback(() => {
     if (!document.fullscreenElement) {
@@ -120,7 +130,7 @@ export function SlidesDeck({
   return (
     <div
       ref={containerRef}
-      className="relative w-screen h-screen overflow-x-hidden bg-background"
+      className={`relative w-screen h-screen overflow-x-hidden bg-background ${ruta === "b" ? "ruta-b" : ""}`}
     >
       {children.map((child, i) => (
         <div
@@ -138,7 +148,7 @@ export function SlidesDeck({
         </div>
       ))}
 
-      {/* Top-left: wordmark + home */}
+      {/* Top-left: wordmark + ruta switch */}
       <div
         className="absolute top-0 left-0 z-50 flex items-center gap-4 px-4 sm:px-6 py-3 sm:py-4"
         style={{ paddingTop: "max(0.75rem, env(safe-area-inset-top))" }}
@@ -149,32 +159,56 @@ export function SlidesDeck({
           className="flex items-center gap-2 transition-opacity hover:opacity-80"
         >
           <span
-            className="font-festival text-[13px] sm:text-[15px] tracking-tight"
-            style={{ color: "var(--accent)" }}
+            className={`${ruta === "b" ? "font-badge" : "font-festival"} text-[13px] sm:text-[15px] tracking-tight uppercase`}
+            style={{ color: wordmarkAccent }}
           >
             AUTOSHOW
           </span>
           <span
             className="text-[11px] sm:text-[12px] font-semibold tracking-[0.14em]"
-            style={{ color: "var(--electric)" }}
+            style={{ color: ruta === "b" ? "var(--foreground)" : "var(--electric)" }}
           >
-            · MEXICALI
+            · {ruta === "b" ? "BAJA" : "MEXICALI"}
           </span>
         </button>
-        {current > 0 && (
-          <button
-            onClick={() => goTo(0)}
-            className="hidden sm:flex items-center gap-1 text-xs text-concrete hover:text-foreground transition-all"
+
+        <div
+          className="hidden sm:flex items-center gap-1.5 ml-2 pl-3 border-l"
+          style={{ borderColor: "var(--card-border)" }}
+        >
+          <span
+            className="text-[9px] font-semibold tracking-[0.24em] uppercase"
+            style={{ color: "var(--muted)" }}
           >
-            <span
-              className="material-symbols-outlined"
-              style={{ fontSize: 14 }}
-            >
-              home
-            </span>
-            <span>Inicio</span>
-          </button>
-        )}
+            Ruta
+          </span>
+          <span
+            className="text-[11px] font-semibold tracking-[0.08em] uppercase px-1.5 py-0.5 rounded"
+            style={{
+              color: "var(--background)",
+              background: wordmarkAccent,
+            }}
+          >
+            {ruta === "a" ? "A" : "B"}
+          </span>
+          <span
+            className="text-[10px] tracking-wide hidden md:inline"
+            style={{ color: "var(--muted)" }}
+          >
+            {rutaLabel}
+          </span>
+          <Link
+            href={otherRutaHref}
+            className="ml-2 text-[10px] font-semibold tracking-[0.18em] uppercase px-2 py-1 rounded transition-colors hover:opacity-80"
+            style={{
+              color: "var(--muted)",
+              border: "1px solid var(--card-border)",
+            }}
+            title={`Ver ruta ${otherRuta.toUpperCase()}`}
+          >
+            → Ruta {otherRuta.toUpperCase()}: {otherRutaLabel}
+          </Link>
+        </div>
       </div>
 
       {/* Top-right: counter + nav + fullscreen */}
@@ -241,7 +275,7 @@ export function SlidesDeck({
             className="h-full transition-all duration-500 ease-out rounded-full"
             style={{
               width: `${((current + 1) / total) * 100}%`,
-              background: "var(--accent)",
+              background: wordmarkAccent,
             }}
           />
         </div>

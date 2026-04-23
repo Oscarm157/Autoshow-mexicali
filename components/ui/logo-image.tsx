@@ -12,8 +12,8 @@ export function LogoImage() {
     >
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
-        src="/logo-v4.png"
-        alt="Autoshow Mexicali — Logo master v4"
+        src="/Logo%20A.png"
+        alt="Autoshow Mexicali — Logo master Ruta A"
         className="w-full h-auto block"
         onError={(e) => {
           const el = e.currentTarget;
@@ -40,7 +40,7 @@ export function LogoImage() {
           Pega el render v4 aprobado
         </div>
         <code className="text-[11px] px-3 py-1.5 rounded-md" style={{ background: "var(--surface-muted)", border: "1px solid var(--card-border)" }}>
-          public/logo-v4.png
+          public/Logo A.png
         </code>
       </div>
     </div>

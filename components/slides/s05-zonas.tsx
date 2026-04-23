@@ -2,7 +2,7 @@ import { Slide } from "../slide";
 import { FadeStack, FadeItem } from "../ui/motion-primitives";
 import { zones } from "@/lib/brand";
 
-export function S10Zonas() {
+export function S05Zonas() {
   return (
     <Slide mode="light">
       <FadeStack className="flex flex-col gap-10">
@@ -11,12 +11,12 @@ export function S10Zonas() {
             className="inline-block text-[11px] font-semibold tracking-[0.24em] uppercase"
             style={{ color: "var(--accent)" }}
           >
-            Sistema de zonas
+            Sistema cromático y zonas
           </span>
         </FadeItem>
 
         <FadeItem>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-[1.1] tracking-[-0.015em] max-w-4xl">
+          <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-[1.05] tracking-[-0.015em] max-w-4xl">
             Tres zonas.{" "}
             <em className="italic" style={{ color: "var(--accent)" }}>
               Un solo sistema.
@@ -25,7 +25,13 @@ export function S10Zonas() {
         </FadeItem>
 
         <FadeItem>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mt-4">
+          <p className="max-w-3xl text-base leading-relaxed" style={{ color: "var(--muted)" }}>
+            La paleta master no es un muestrario decorativo. Se reparte entre las tres zonas del evento: cada una hereda el ADN del logo con su propio tratamiento cromático.
+          </p>
+        </FadeItem>
+
+        <FadeItem>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mt-2">
             {zones.map((z) => (
               <div
                 key={z.slug}
@@ -44,9 +50,7 @@ export function S10Zonas() {
                     >
                       {z.icon}
                     </span>
-                    <span
-                      className="text-[10px] font-semibold tracking-[0.22em] uppercase opacity-70"
-                    >
+                    <span className="text-[10px] font-semibold tracking-[0.22em] uppercase opacity-70">
                       Zona
                     </span>
                   </div>
@@ -93,7 +97,7 @@ export function S10Zonas() {
 
         <FadeItem>
           <p
-            className="text-center mt-2 text-sm italic max-w-3xl mx-auto"
+            className="text-center text-sm italic max-w-3xl mx-auto"
             style={{ color: "var(--muted)" }}
           >
             El color cambia. El ADN del master se mantiene.
