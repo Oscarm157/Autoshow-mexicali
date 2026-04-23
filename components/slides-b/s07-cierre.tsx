@@ -4,16 +4,17 @@ import { RutaShield } from "../ui/ruta-shield";
 
 export function S07Cierre() {
   return (
-    <Slide mode="dark" className="relative overflow-hidden">
+    <Slide mode="light" centered className="relative overflow-hidden">
+      <div className="absolute inset-0 asphalt-grid pointer-events-none" />
       <div
         className="absolute inset-0 pointer-events-none"
         style={{
-          backgroundImage:
-            "linear-gradient(180deg, rgba(242,233,214,0.04) 0%, transparent 40%, transparent 60%, rgba(242,233,214,0.04) 100%)",
+          background:
+            "radial-gradient(ellipse 1100px 800px at 50% 120%, rgba(198,74,26,0.16) 0%, rgba(198,74,26,0.06) 35%, transparent 65%)",
         }}
       />
 
-      <div className="relative z-10 flex flex-col items-center text-center gap-12">
+      <div className="relative z-10 flex flex-col items-center text-center gap-10">
         <FadeStack className="flex flex-col gap-10 items-center">
           <FadeItem>
             <div className="flex items-center gap-4">
@@ -29,7 +30,7 @@ export function S07Cierre() {
           </FadeItem>
 
           <ScaleIn delay={0.2}>
-            <RutaShield size={220} number="26" />
+            <RutaShield size={200} number="26" />
           </ScaleIn>
 
           <FadeItem>
@@ -54,7 +55,7 @@ export function S07Cierre() {
           <FadeItem>
             <p
               className="font-badge uppercase text-2xl sm:text-3xl tracking-[0.12em]"
-              style={{ color: "var(--foreground)" }}
+              style={{ color: "var(--accent)" }}
             >
               Quedamos a la espera de sus comentarios.
             </p>
@@ -64,10 +65,10 @@ export function S07Cierre() {
 
       <div className="absolute bottom-10 left-0 right-0 text-center">
         <div className="flex items-center justify-center gap-3 font-badge text-[10px] uppercase tracking-[0.36em]">
-          <span style={{ color: "var(--muted-light)" }}>Propuesta por</span>
-          <span style={{ color: "var(--accent)" }}>Bravo Publicidad</span>
+          <span style={{ color: "var(--muted)" }}>Propuesta por</span>
+          <span style={{ color: "var(--stamp)" }}>Bravo Publicidad</span>
           <span style={{ color: "var(--muted-light)" }}>·</span>
-          <span style={{ color: "var(--muted-light)" }}>2026</span>
+          <span style={{ color: "var(--muted)" }}>2026</span>
         </div>
       </div>
     </Slide>

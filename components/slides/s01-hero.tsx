@@ -4,9 +4,15 @@ import { brand, rutas } from "@/lib/brand";
 
 export function S01Hero() {
   return (
-    <Slide mode="dark" centered className="relative overflow-hidden">
-      <div className="absolute inset-0 sun-bg-dark pointer-events-none" />
-      <div className="absolute inset-0 warm-grid opacity-30 pointer-events-none" />
+    <Slide mode="light" centered className="relative overflow-hidden">
+      <div
+        className="absolute inset-0 pointer-events-none"
+        style={{
+          background:
+            "radial-gradient(ellipse 1100px 700px at 50% 130%, rgba(255,107,53,0.18) 0%, rgba(255,201,60,0.08) 35%, transparent 65%)",
+        }}
+      />
+      <div className="absolute inset-0 warm-grid opacity-40 pointer-events-none" />
 
       <div className="relative z-10 flex flex-col gap-10 items-center text-center">
         <FadeStack className="flex flex-col gap-8 items-center">
@@ -22,17 +28,24 @@ export function S01Hero() {
           <FadeItem>
             <h1 className="font-festival leading-[0.9] text-[56px] sm:text-[88px] md:text-[120px] lg:text-[148px] tracking-tight">
               <HeroWord delay={0.15}>
-                <span className="chisel-orange">AUTOSHOW</span>
+                <span
+                  style={{
+                    color: "var(--accent)",
+                    textShadow:
+                      "3px 3px 0 var(--accent-dark), 6px 6px 0 rgba(30,30,30,0.18)",
+                  }}
+                >
+                  AUTOSHOW
+                </span>
               </HeroWord>
               <br />
               <HeroWord delay={0.4}>
                 <span
                   style={{
-                    color: "var(--foreground)",
+                    color: "var(--primary)",
                     fontSize: "0.5em",
                     letterSpacing: "0.12em",
                     fontWeight: 400,
-                    opacity: 0.85,
                   }}
                 >
                   · MEXICALI ·
@@ -42,7 +55,10 @@ export function S01Hero() {
           </FadeItem>
 
           <FadeItem>
-            <p className="max-w-2xl text-lg sm:text-xl leading-relaxed" style={{ color: "var(--muted)" }}>
+            <p
+              className="max-w-2xl text-lg sm:text-xl leading-relaxed"
+              style={{ color: "var(--muted)" }}
+            >
               Propuesta de sistema de marca para la edición 2026.{" "}
               <em className="italic" style={{ color: "var(--accent)" }}>
                 {brand.taglineMain}
