@@ -1,6 +1,6 @@
 import { Slide } from "../slide";
 import { FadeStack, FadeItem, HeroWord, ScaleIn } from "../ui/motion-primitives";
-import { RutaShield } from "../ui/ruta-shield";
+import { RutaBLogo } from "../ui/ruta-b-logo";
 import { brand, rutas } from "@/lib/brand";
 
 export function S01Hero() {
@@ -24,7 +24,7 @@ export function S01Hero() {
           </FadeItem>
 
           <ScaleIn delay={0.2}>
-            <RutaShield size={320} number="26" />
+            <RutaBLogo size={360} />
           </ScaleIn>
 
           <FadeItem>

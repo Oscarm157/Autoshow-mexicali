@@ -1,6 +1,6 @@
 import { Slide } from "../slide";
 import { FadeStack, FadeItem, HeroWord, ScaleIn } from "../ui/motion-primitives";
-import { RutaShield } from "../ui/ruta-shield";
+import { RutaBLogo } from "../ui/ruta-b-logo";
 
 export function S07Cierre() {
   return (
@@ -30,7 +30,7 @@ export function S07Cierre() {
           </FadeItem>
 
           <ScaleIn delay={0.2}>
-            <RutaShield size={200} number="26" />
+            <RutaBLogo size={220} />
           </ScaleIn>
 
           <FadeItem>

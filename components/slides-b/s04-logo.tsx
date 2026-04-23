@@ -1,6 +1,6 @@
 import { Slide } from "../slide";
 import { FadeStack, FadeItem, ScaleIn } from "../ui/motion-primitives";
-import { RutaShield } from "../ui/ruta-shield";
+import { RutaBLogo } from "../ui/ruta-b-logo";
 
 const razones = [
   {
@@ -77,7 +77,7 @@ export function S04Logo() {
         </FadeStack>
 
         <ScaleIn delay={0.3} className="flex items-center justify-center">
-          <RutaShield size={360} number="26" />
+          <RutaBLogo size={460} />
         </ScaleIn>
       </div>
     </Slide>
