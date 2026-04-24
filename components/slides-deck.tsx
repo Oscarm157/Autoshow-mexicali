@@ -180,7 +180,7 @@ export function SlidesDeck({
             className="text-[9px] font-semibold tracking-[0.24em] uppercase"
             style={{ color: "var(--muted)" }}
           >
-            Ruta
+            Opción
           </span>
           <span
             className="text-[11px] font-semibold tracking-[0.08em] uppercase px-1.5 py-0.5 rounded"
@@ -204,9 +204,9 @@ export function SlidesDeck({
               color: "var(--muted)",
               border: "1px solid var(--card-border)",
             }}
-            title={`Ver ruta ${otherRuta.toUpperCase()}`}
+            title={`Ver Opción ${otherRuta.toUpperCase()}`}
           >
-            → Ruta {otherRuta.toUpperCase()}: {otherRutaLabel}
+            → Opción {otherRuta.toUpperCase()}: {otherRutaLabel}
           </Link>
         </div>
       </div>
