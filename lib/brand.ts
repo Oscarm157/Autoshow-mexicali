@@ -15,8 +15,8 @@ export const brand = {
 export const rutas = {
   a: {
     id: "a",
-    name: "Opción A — Sunbelt Family",
-    shortName: "Sunbelt Family",
+    name: "Opción A — Sol y familia",
+    shortName: "Sol y familia",
     tone: "Cálido, festivo, familiar.",
     bg: "#F7EFE0",
     fg: "#1E3A5F",
