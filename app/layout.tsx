@@ -4,7 +4,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Autoshow Mexicali · Propuesta de marca",
   description:
-    "Sistema visual evergreen para Autoshow Mexicali. Dos opciones: Sol y familia y Ruta Baja. Bravo Publicidad.",
+    "Sistema visual evergreen para Autoshow Mexicali. Dos opciones: Familia y sol y Ruta Baja. Bravo Publicidad.",
 };
 
 export default function RootLayout({

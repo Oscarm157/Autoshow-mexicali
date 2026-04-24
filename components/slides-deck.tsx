@@ -16,9 +16,9 @@ export function SlidesDeck({
 }: SlidesDeckProps) {
   const effectiveStorageKey =
     storageKey ?? `autoshow-mexicali-slide-${ruta}`;
-  const rutaLabel = ruta === "a" ? "Sol y familia" : "Ruta Baja";
+  const rutaLabel = ruta === "a" ? "Familia y sol" : "Ruta Baja";
   const otherRuta = ruta === "a" ? "b" : "a";
-  const otherRutaLabel = ruta === "a" ? "Ruta Baja" : "Sol y familia";
+  const otherRutaLabel = ruta === "a" ? "Ruta Baja" : "Familia y sol";
   const otherRutaHref = ruta === "a" ? "/ruta-b" : "/";
   const wordmarkAccent = ruta === "a" ? "var(--accent)" : "var(--stamp)";
   const [current, setCurrent] = useState(0);
