@@ -224,7 +224,7 @@ export const faq = {
     },
     {
       q: "¿Tengo que comprar boleto del museo aparte?",
-      a: "No. El acceso al museo durante el día del evento está incluido sin costo, pero necesitas registrarte aquí para asegurar el lugar.",
+      a: "Si te registras aquí, el acceso al museo durante el evento queda incluido sin costo. Si no te registras, aplica la tarifa normal del museo.",
     },
     {
       q: "¿Hay food trucks o servicio de alimentos?",
