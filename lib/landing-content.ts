@@ -201,8 +201,8 @@ export const sponsors = {
 };
 
 export const gallery = {
-  eyebrow: "Postales del evento",
-  title: "Donde sucede el Auto Show.",
+  eyebrow: "Postales de Baja",
+  title: "La Baja como escenario.",
   caption: "Imágenes referenciales. La edición Mexicali es el 14 de noviembre.",
 };
 
