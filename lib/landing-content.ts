@@ -58,7 +58,7 @@ export const concept = {
   eyebrow: "Cómo funciona",
   title: "Aquí nadie se aburre: autos para ti, diversión para ellos.",
   intro:
-    "Todo el evento es dentro del Museo Sol del Niño. Una visita, dos planes.",
+    "Todo el evento es en el área del Museo Sol del Niño. Una visita, dos planes.",
   zones: [
     {
       tag: "Zona 01",
