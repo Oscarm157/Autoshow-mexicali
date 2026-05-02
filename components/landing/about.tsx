@@ -84,7 +84,7 @@ export function About() {
                 }}
               >
                 <span className="l-mono text-[10.5px] tracking-[0.24em] uppercase">
-                  Modelos 2026
+                  Modelos nuevos
                 </span>
               </div>
               <div

@@ -4,7 +4,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Auto Show Baja California 2026 · Edición Mexicali",
   description:
-    "El evento automotriz más importante de Mexicali. Las mejores marcas de autos 2026, entrada gratis, para toda la familia. 14 de noviembre en el Museo Sol del Niño.",
+    "El Auto Show familiar de Mexicali. Los modelos más nuevos de las marcas de Baja California, entrada gratis y museo abierto para los niños. 14 de noviembre en el Museo Sol del Niño.",
 };
 
 export default function RootLayout({

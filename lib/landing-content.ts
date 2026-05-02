@@ -29,7 +29,7 @@ export const hero = {
   badge: "Mexicali · 14 de noviembre, 2026",
   headline: "El Auto Show familiar de Mexicali.",
   subhead:
-    "Pasa el día con la familia. Modelos 2026, marcas de Mexicali, museo abierto. La entrada no se paga.",
+    "Pasa el día con la familia. Los modelos más nuevos, las marcas de Mexicali y el museo abierto. La entrada no se paga.",
   meta: [
     { label: "Fecha", value: "14 de noviembre, 2026" },
     { label: "Sede", value: "Museo Sol del Niño · Mexicali" },
@@ -41,12 +41,12 @@ export const about = {
   eyebrow: "Sobre el evento",
   title: "Un día con autos y museo, en un mismo lugar.",
   body: [
-    "Las marcas de Mexicali se juntan en el estacionamiento del Museo Sol del Niño con sus modelos 2026. Vienes a ver carros, comparar y, si quieres, agendar prueba de manejo.",
+    "Las marcas de Mexicali se juntan en el estacionamiento del Museo Sol del Niño con sus los modelos más nuevos. Vienes a ver carros, comparar y, si quieres, agendar prueba de manejo.",
     "Mientras tanto, el museo abre sus exhibiciones para que los niños se diviertan. La entrada al evento incluye el acceso al museo durante el día. Sin costo.",
   ],
   pills: [
     "Para la familia",
-    "Modelos 2026",
+    "Modelos nuevos",
     "Entrada gratuita",
     "Museo del Niño",
     "Pruebas de manejo",
@@ -65,7 +65,7 @@ export const concept = {
       label: "Afuera",
       title: "Auto Show",
       lead: "Estacionamiento del museo",
-      body: "Las agencias y marcas de Mexicali con sus modelos 2026 en el estacionamiento del museo. Pruebas de manejo, recorridos guiados, food trucks y música.",
+      body: "Las agencias y marcas de Mexicali con sus los modelos más nuevos en el estacionamiento del museo. Pruebas de manejo, recorridos guiados, food trucks y música.",
       icon: "directions_car",
       photo: "/hero/concept-autoshow.webp",
     },
@@ -92,7 +92,7 @@ export const experiences = {
       icon: "directions_car",
       title: "Familiares",
       lead: "Autos del día a día",
-      body: "SUV, pickup y sedán de las marcas que se ven en la calle. Modelos 2026 para conocer, comparar y agendar prueba.",
+      body: "SUV, pickup y sedán de las marcas que se ven en la calle. Lo más nuevo para conocer, comparar y agendar prueba.",
     },
     {
       tag: "02",

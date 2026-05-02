@@ -6,7 +6,7 @@ import { gallery } from "@/lib/landing-content";
 
 const images = [
   { src: "/hero/hero-road.webp", alt: "Carretera de la Rumorosa al atardecer", aspect: "aspect-[16/10]", span: "md:col-span-8" },
-  { src: "/hero/gallery-toyota.webp", alt: "SUV Toyota 2026 en mirador de Baja California", aspect: "aspect-[3/4]", span: "md:col-span-4 md:row-span-2" },
+  { src: "/hero/gallery-toyota.webp", alt: "Toyota Highlander en mirador de Baja California", aspect: "aspect-[3/4]", span: "md:col-span-4 md:row-span-2" },
   { src: "/hero/gallery-mazda.webp", alt: "Mazda CX-50 en carretera costera de Baja", aspect: "aspect-[4/3]", span: "md:col-span-4" },
   { src: "/hero/gallery-polaris.webp", alt: "Polaris RZR en mirador del desierto de Baja", aspect: "aspect-[4/3]", span: "md:col-span-4" },
 ];
