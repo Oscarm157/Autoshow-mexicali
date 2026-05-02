@@ -128,9 +128,6 @@ export function Registro() {
                         </div>
                       </RevealItem>
                       <RevealItem>
-                        <Select label={registro.fields.party} name="party" options={registro.partyOptions} />
-                      </RevealItem>
-                      <RevealItem>
                         <Select label={registro.fields.interest} name="interest" options={registro.interestOptions} />
                       </RevealItem>
                     </RevealStack>

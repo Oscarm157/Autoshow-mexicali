@@ -260,17 +260,15 @@ export const registro = {
     name: "Nombre completo",
     email: "Correo",
     phone: "Teléfono · WhatsApp",
-    party: "¿Cuántos los acompañan?",
     interest: "Lo que más te interesa ver",
   },
-  partyOptions: ["Solo yo", "1 acompañante", "2 a 3", "4 o más"],
   interestOptions: [
     "Autos familiares",
     "Autos premium",
     "Off-road y 4x4",
     "Todas las áreas",
   ],
-  submit: "Sí, voy",
+  submit: "Obtener pase",
   successTitle: "Te esperamos.",
   successBody:
     "Listo. Te llega un correo con la confirmación. Más cerca de la fecha te avisamos del programa y los horarios.",
