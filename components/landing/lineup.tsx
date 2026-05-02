@@ -29,9 +29,9 @@ export function Lineup() {
               <h2
                 className="l-display"
                 style={{
-                  fontSize: "clamp(36px, 6vw, 80px)",
+                  fontSize: "clamp(30px, 4.6vw, 60px)",
                   color: "var(--l-ink)",
-                  lineHeight: 1,
+                  lineHeight: 1.05,
                 }}
               >
                 {lineup.title}

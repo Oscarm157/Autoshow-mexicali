@@ -14,7 +14,7 @@ export function Experiencias() {
   return (
     <section id="experiencias" className="py-24 md:py-36 relative">
       <div className="max-w-[1320px] mx-auto px-6 md:px-10">
-        <div className="grid grid-cols-1 lg:grid-cols-[1fr_1fr] gap-12 lg:gap-20 mb-14 md:mb-20">
+        <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.6fr] gap-12 lg:gap-20 mb-14 md:mb-20">
           <Reveal>
             <div className="flex flex-col gap-3">
               <div className="flex items-center gap-3">
@@ -30,9 +30,9 @@ export function Experiencias() {
               <h2
                 className="l-display"
                 style={{
-                  fontSize: "clamp(36px, 6vw, 80px)",
+                  fontSize: "clamp(28px, 4.2vw, 56px)",
                   color: "var(--l-ink)",
-                  lineHeight: 0.96,
+                  lineHeight: 1.05,
                 }}
               >
                 {experiences.title}

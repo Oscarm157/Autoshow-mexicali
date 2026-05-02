@@ -5,7 +5,7 @@ export function Actividades() {
   return (
     <section id="actividades" className="py-24 md:py-36 relative">
       <div className="max-w-[1320px] mx-auto px-6 md:px-10">
-        <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.2fr] gap-12 lg:gap-20 mb-14 md:mb-16">
+        <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.6fr] gap-12 lg:gap-20 mb-14 md:mb-16">
           <Reveal>
             <div className="flex flex-col gap-3">
               <div className="flex items-center gap-3">
@@ -30,9 +30,9 @@ export function Actividades() {
               <h2
                 className="l-display"
                 style={{
-                  fontSize: "clamp(40px, 7vw, 96px)",
+                  fontSize: "clamp(28px, 4.4vw, 60px)",
                   color: "var(--l-ink)",
-                  lineHeight: 0.95,
+                  lineHeight: 1.05,
                 }}
               >
                 {activities.title}

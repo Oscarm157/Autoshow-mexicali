@@ -45,9 +45,9 @@ export function Registro() {
               <h2
                 className="l-display"
                 style={{
-                  fontSize: "clamp(48px, 8vw, 96px)",
+                  fontSize: "clamp(34px, 5.5vw, 72px)",
                   color: "var(--l-ink)",
-                  lineHeight: 0.95,
+                  lineHeight: 1.05,
                 }}
               >
                 {registro.title}
