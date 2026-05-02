@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Autoshow Baja · Edición Mexicali 2026",
+  title: "Auto Show Baja California 2026 · Edición Mexicali",
   description:
-    "Una ruta. Tres paradas. Familiar, off-road y VIP en un mismo recorrido. Edición Mexicali 2026 del Autoshow Baja.",
+    "El evento automotriz más importante de Mexicali. Las mejores marcas de autos 2026, entrada gratis, para toda la familia. 10 de noviembre en el Museo Sol del Niño.",
 };
 
 export default function RootLayout({

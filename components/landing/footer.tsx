@@ -14,12 +14,12 @@ export function Footer() {
             <h3
               className="l-display"
               style={{
-                fontSize: "clamp(36px, 6vw, 80px)",
+                fontSize: "clamp(32px, 5.5vw, 72px)",
                 color: "var(--l-ink)",
-                lineHeight: 1,
+                lineHeight: 1.05,
               }}
             >
-              <span className="block">El Auto Show familiar</span>
+              <span className="block">El Auto Show familiar más importante</span>
               <span className="block" style={{ color: "var(--l-mustard)" }}>de Baja California.</span>
             </h3>
           </div>
