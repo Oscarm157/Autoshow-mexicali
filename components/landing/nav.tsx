@@ -31,7 +31,7 @@ export function Nav() {
       <div className="max-w-[1320px] mx-auto px-6 md:px-10 h-16 md:h-20 flex items-center justify-between">
         <a href="#top" className="flex items-center gap-3 group">
           <span
-            className="l-eyebrow"
+            className="l-display text-[18px] md:text-[20px]"
             style={{ color: "var(--l-ink)" }}
           >
             {event.brand}
@@ -41,7 +41,7 @@ export function Nav() {
             style={{ background: "var(--l-rule-strong)" }}
           />
           <span
-            className="hidden sm:inline l-eyebrow"
+            className="hidden sm:inline l-mono text-[10.5px] tracking-[0.24em] uppercase"
             style={{ color: "var(--l-mustard)" }}
           >
             {event.edition}
@@ -64,14 +64,16 @@ export function Nav() {
         <div className="flex items-center gap-3">
           <a
             href="#registro"
-            className="hidden md:inline-flex items-center gap-2 l-eyebrow px-5 py-2.5"
+            className="hidden md:inline-flex items-center gap-2 px-5 py-2.5 group"
             style={{
-              border: "1px solid var(--l-ink)",
-              color: "var(--l-ink)",
+              background: "var(--l-ink)",
+              color: "var(--l-bg)",
             }}
           >
-            <span>{nav.cta}</span>
-            <span aria-hidden>→</span>
+            <span className="l-eyebrow" style={{ color: "var(--l-mustard)" }}>
+              {nav.cta}
+            </span>
+            <span aria-hidden className="transition-transform group-hover:translate-x-0.5">→</span>
           </a>
 
           <button

@@ -1,78 +1,126 @@
+"use client";
+
+import Image from "next/image";
 import { Reveal, RevealStack, RevealItem } from "./reveal";
 import { about } from "@/lib/landing-content";
 
 export function About() {
   return (
-    <section id="evento" className="py-28 md:py-40 relative">
-      <div className="max-w-[1320px] mx-auto px-6 md:px-10">
-        <div className="grid grid-cols-1 lg:grid-cols-[280px_1fr] gap-12 lg:gap-24">
-          <Reveal>
-            <div className="flex flex-col gap-4">
+    <section id="evento" className="py-24 md:py-36 relative overflow-hidden">
+      <Decor />
+
+      <div className="relative max-w-[1320px] mx-auto px-6 md:px-10">
+        <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.05fr] gap-14 lg:gap-24 items-start">
+          <div className="flex flex-col gap-10">
+            <Reveal>
               <div className="flex items-center gap-3">
-                <span className="w-8 h-px" style={{ background: "var(--l-olive)" }} />
-                <span className="l-eyebrow" style={{ color: "var(--l-olive)" }}>
+                <span className="w-12 h-px" style={{ background: "var(--l-mustard)" }} />
+                <span className="l-eyebrow" style={{ color: "var(--l-mustard)" }}>
                   {about.eyebrow}
                 </span>
               </div>
-              <span className="l-mono text-[11px] uppercase tracking-[0.2em]" style={{ color: "var(--l-muted)" }}>
-                /01
-              </span>
-            </div>
-          </Reveal>
+            </Reveal>
 
-          <RevealStack className="flex flex-col gap-10">
-            <RevealItem>
-              <h2
-                className="text-[34px] sm:text-[44px] md:text-[56px] leading-[1.05] tracking-[-0.02em]"
+            <RevealStack className="flex flex-col gap-9">
+              <RevealItem>
+                <h2
+                  className="l-display"
+                  style={{
+                    fontSize: "clamp(40px, 7vw, 96px)",
+                    color: "var(--l-ink)",
+                    lineHeight: 0.95,
+                  }}
+                >
+                  {about.title}
+                </h2>
+              </RevealItem>
+
+              {about.body.map((p, i) => (
+                <RevealItem key={i}>
+                  <p
+                    className="text-[18px] md:text-[21px] leading-[1.55] max-w-2xl"
+                    style={{ color: "var(--l-ink-soft)" }}
+                  >
+                    {p}
+                  </p>
+                </RevealItem>
+              ))}
+
+              <RevealItem>
+                <div className="flex flex-wrap gap-2.5 mt-2">
+                  {about.pills.map((pill, i) => (
+                    <span
+                      key={pill}
+                      className="l-mono text-[10.5px] tracking-[0.16em] uppercase px-3.5 py-2"
+                      style={{
+                        background: i % 2 === 0 ? "var(--l-ink)" : "transparent",
+                        color: i % 2 === 0 ? "var(--l-bg)" : "var(--l-ink)",
+                        border: i % 2 === 0 ? "none" : "1px solid var(--l-rule-strong)",
+                        transform: i % 3 === 1 ? "rotate(-1.2deg)" : i % 3 === 2 ? "rotate(0.8deg)" : "none",
+                      }}
+                    >
+                      {pill}
+                    </span>
+                  ))}
+                </div>
+              </RevealItem>
+            </RevealStack>
+          </div>
+
+          <Reveal delay={0.15} className="relative">
+            <div className="relative aspect-[4/5] w-full">
+              <Image
+                src="/hero/gallery-toyota.webp"
+                alt="Toyota Land Cruiser en mirador de Baja California"
+                fill
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                className="object-cover"
+              />
+              <div
+                className="absolute -top-4 -left-4 px-4 py-2 rotate-[-3deg]"
                 style={{
-                  fontFamily: "var(--font-display)",
+                  background: "var(--l-mustard)",
                   color: "var(--l-ink)",
                 }}
               >
-                {about.title}
-              </h2>
-            </RevealItem>
-
-            {about.body.map((p, i) => (
-              <RevealItem key={i}>
-                <p
-                  className="text-[17px] md:text-[19px] leading-[1.65] max-w-3xl"
-                  style={{ color: "var(--l-ink-soft)" }}
-                >
-                  {p}
-                </p>
-              </RevealItem>
-            ))}
-
-            <RevealItem>
-              <div className="grid grid-cols-3 max-w-2xl mt-6 gap-px" style={{ background: "var(--l-rule)" }}>
-                <Stat n="03" label="Paradas" />
-                <Stat n="01" label="Día" />
-                <Stat n="∞" label="Ediciones" />
+                <span className="l-mono text-[10.5px] tracking-[0.24em] uppercase">
+                  Postal · Sea of Cortez
+                </span>
               </div>
-            </RevealItem>
-          </RevealStack>
+              <div
+                className="absolute -bottom-3 -right-3 px-4 py-2 rotate-[2deg]"
+                style={{
+                  background: "var(--l-ink)",
+                  color: "var(--l-bg)",
+                }}
+              >
+                <span className="l-mono text-[10.5px] tracking-[0.24em] uppercase">
+                  Capítulo 01
+                </span>
+              </div>
+            </div>
+          </Reveal>
         </div>
       </div>
     </section>
   );
 }
 
-function Stat({ n, label }: { n: string; label: string }) {
+function Decor() {
   return (
-    <div
-      className="flex flex-col gap-1.5 px-5 py-6"
-      style={{ background: "var(--l-bg)" }}
+    <svg
+      aria-hidden
+      viewBox="0 0 1200 320"
+      className="absolute -top-10 right-0 w-[60%] max-w-[800px] opacity-40 pointer-events-none"
     >
-      <span
-        className="l-display text-[44px] md:text-[56px]"
-        style={{ color: "var(--l-mustard)" }}
-      >
-        {n}
-      </span>
-      <span className="l-mono text-[10px] tracking-[0.24em] uppercase" style={{ color: "var(--l-muted)" }}>
-        {label}
-      </span>
-    </div>
+      <path
+        d="M -50 200 C 200 80, 400 280, 600 160 S 1000 80, 1300 200"
+        fill="none"
+        stroke="var(--l-mustard)"
+        strokeWidth="1.2"
+        strokeDasharray="6 8"
+        opacity="0.6"
+      />
+    </svg>
   );
 }

@@ -1,56 +1,174 @@
-// Copy ES literal de la landing pública.
+// Copy ES literal — pivote roadtrip / familiar / multi-ciudad.
 // Donde no hay datos reales, [PLACEHOLDER] visible para que se llene.
-// Nada se inventa: marcas, patrocinadores, costos, horarios.
+// Nada se inventa: marcas extras, patrocinadores, actividades.
 
 export const event = {
   brand: "Autoshow Baja",
-  edition: "Edición Mexicali",
+  edition: "Primera parada · Mexicali",
   year: "2026",
   date: "10 de noviembre, 2026",
   dateShort: "10 · NOV · 26",
+  dateLong: "Martes 10 de noviembre",
   city: "Mexicali, Baja California",
   venue: "Museo Sol del Niño",
-  schedule: "[HORARIO POR CONFIRMAR]",
-  cost: "[COSTO POR CONFIRMAR]",
-  ctaPrimary: "Reservar lugar",
-  ctaSecondary: "Conocer las paradas",
+  access: "Acceso gratuito",
+  audience: "Para toda la familia",
+  ctaPrimary: "Regístrate gratis",
+  ctaSecondary: "Conoce la ruta",
 };
 
-export const hero = {
-  eyebrow: "Ruta 26 · Baja California",
-  display: ["Autoshow", "Baja"],
-  subhead: "Una ruta. Tres paradas. Un solo día en la Baja.",
-  metaLabel: "Edición Mexicali",
-};
-
-export const about = {
-  eyebrow: "Sobre el evento",
-  title: "El primer Autoshow familiar de la Baja, organizado como una ruta.",
-  body: [
-    "Autoshow Baja es una exposición automotriz que se mueve entre ciudades de Baja California. La edición Mexicali abre el recorrido. Después siguen Tijuana y Ensenada. La identidad es del territorio, no de un solo venue.",
-    "El visitante no escoge entre áreas: avanza por la ruta. Tres paradas dentro del evento, cada una con su propio carácter. Familiar, lujo y off-road comparten el mismo día.",
+export const stickyBar = {
+  parts: [
+    { icon: "★", text: "Acceso gratuito" },
+    { icon: "✿", text: "Para toda la familia" },
+    { icon: "◎", text: "Museo Sol del Niño incluido" },
+    { icon: "→", text: "Regístrate" },
   ],
 };
 
-export const stops = {
-  eyebrow: "Sistema de paradas",
-  title: "Tres paradas. Una sola ruta.",
-  description:
-    "El recorrido empieza en lo accesible y termina en el desierto. Cada parada tiene su señalética y su propia experiencia.",
+export const hero = {
+  badge: "Ruta Baja · Edición 2026",
+  display: ["La ruta", "automotriz", "de la Baja"],
+  subhead:
+    "Un recorrido entre autos, familia y cultura Baja. Arrancamos en Mexicali el 10 de noviembre y desde ahí seguimos por toda la península.",
+  signage: {
+    label: "Primera parada",
+    city: "Mexicali",
+  },
+  meta: [
+    { label: "Arranca", value: "10 · NOV · 26" },
+    { label: "Sede", value: "Museo Sol del Niño" },
+    { label: "Acceso", value: "Gratuito" },
+    { label: "Audiencia", value: "Familiar" },
+  ],
+};
+
+export const about = {
+  eyebrow: "El plan",
+  title: "Una ruta. La Baja entera. Empieza en Mexicali.",
+  body: [
+    "No es un evento más. Es un recorrido entre autos, familia y cultura del norte. Arrancamos en Mexicali, dentro del Museo Sol del Niño, y desde ahí la ruta se mueve cada año a otra ciudad de Baja California.",
+    "Vienes a manejar, a ver, a probar y a pasar el día con la familia. Hay autos para curiosear, espacios para los niños y rincones del museo abiertos para todos. La entrada es gratis.",
+  ],
+  pills: [
+    "Roadtrip",
+    "Familia",
+    "Cultura Baja",
+    "Autos",
+    "Museo del Niño",
+    "Carretera",
+    "Aventura",
+    "Comunidad",
+  ],
+};
+
+export const route = {
+  eyebrow: "La ruta",
+  title: "Mexicali abre el mapa.",
+  intro:
+    "Cada año la ruta se mueve a otra ciudad de Baja California. Mexicali es la primera parada. Lo que sigue se anuncia al cierre de esta edición.",
+  list: [
+    {
+      tag: "Parada 01",
+      city: "Mexicali",
+      date: "10 · NOV · 26",
+      status: "Confirmada",
+      note: "Museo Sol del Niño. Acceso gratuito.",
+      active: true,
+    },
+    {
+      tag: "Parada 02",
+      city: "Tijuana",
+      date: "2027",
+      status: "En planeación",
+      note: "Fecha y venue por anunciar.",
+      active: false,
+    },
+    {
+      tag: "Parada 03",
+      city: "Ensenada",
+      date: "2028",
+      status: "Por confirmar",
+      note: "Sujeta a calendario regional.",
+      active: false,
+    },
+  ],
+  outro: "Y lo que la ruta vaya pidiendo. La Baja es larga.",
+};
+
+export const experiences = {
+  eyebrow: "Qué vas a encontrar",
+  title: "Una pasada relajada por todos los autos del momento.",
+  body:
+    "Tres ambientes dentro del mismo recorrido. Vas a tu paso, te detienes en lo que te llama, te subes a lo que se pueda subir.",
+  items: [
+    {
+      tag: "01",
+      icon: "directions_car",
+      title: "Para la familia",
+      lead: "Autos del día a día",
+      body: "SUV, pickup, sedán, los modelos que se ven en la calle. Súbete, abre puertas, prueba la cajuela, mete a los niños. Sin presión de venta.",
+    },
+    {
+      tag: "02",
+      icon: "diamond",
+      title: "Para los que ven detalle",
+      lead: "Autos premium",
+      body: "Sedán, deportivos, importados. Detallados y posando. La zona donde te paras a ver bien.",
+    },
+    {
+      tag: "03",
+      icon: "terrain",
+      title: "Para los aventureros",
+      lead: "4x4, off-road y RZR",
+      body: "Lo que se va al cerro, al desierto, al arroyo. Polaris y compañía. Ideal para los niños fanáticos del polvo.",
+    },
+  ],
+};
+
+export const activities = {
+  eyebrow: "Actividades",
+  title: "Cosas que pasan durante el día.",
+  body: "El programa final se confirma con los expositores. Mientras tanto, esta es la lista en construcción.",
+  items: [
+    { icon: "directions_car", text: "Recorridos guiados por marca" },
+    { icon: "child_care", text: "Zona kids dentro del museo" },
+    { icon: "restaurant", text: "Food trucks y café" },
+    { icon: "music_note", text: "Música en vivo y DJ sets" },
+    { icon: "videocam", text: "Foto y video con los autos" },
+    { icon: "local_activity", text: "Rifas y dinámicas con marcas" },
+  ],
+  status: "Programa preliminar",
 };
 
 export const lineup = {
-  eyebrow: "Lineup",
-  title: "Marcas y expositores.",
-  status: "Lineup en breve",
-  body: "Las marcas confirmadas se publican conforme se cierran los acuerdos comerciales. Esta sección se llena directamente desde el equipo de Bravo Publicidad.",
-  slots: 12,
+  eyebrow: "Las marcas que mueven Baja",
+  title: "Exhibición multimarca.",
+  intro:
+    "12 marcas confirmadas. Las que se ven todos los días en Baja, las que cruzan la frontera, las que se llevan el desierto. Y muchas más por anunciar.",
+  status: "Más marcas por anunciar",
+  closer: "Y más marcas invitadas conforme se cierran los acuerdos.",
 };
+
+export const brands = [
+  { name: "Toyota", slug: "toyota", tier: "hero" },
+  { name: "Ford", slug: "ford", tier: "hero" },
+  { name: "Mazda", slug: "mazda", tier: "hero" },
+  { name: "Polaris", slug: "polaris", tier: "hero" },
+  { name: "Jeep", slug: "jeep", tier: "regular" },
+  { name: "Mercedes-Benz", slug: "mercedes-benz", tier: "regular" },
+  { name: "Ram", slug: "ram", tier: "regular" },
+  { name: "Dodge", slug: "dodge", tier: "regular" },
+  { name: "Fiat", slug: "fiat", tier: "regular" },
+  { name: "Peugeot", slug: "peugeot", tier: "regular" },
+  { name: "Mitsubishi", slug: "mitsubishi", tier: "regular" },
+  { name: "Autostar", slug: "autostar", tier: "regular" },
+] as const;
 
 export const sponsors = {
   eyebrow: "Patrocinadores",
   title: "Quienes hacen posible la ruta.",
-  body: "Bloque reservado para los patrocinadores oficiales de la edición. Los logos se publican conforme se cierran los acuerdos.",
+  body: "Bloque reservado para los patrocinadores oficiales. Los logos se publican conforme se cierran los acuerdos.",
   status: "Por anunciar",
   tiers: [
     { name: "Presenta", slots: 1 },
@@ -58,42 +176,17 @@ export const sponsors = {
     { name: "Aliados de la ruta", slots: 8 },
   ],
   venuePartner: {
-    label: "Sede oficial",
+    label: "Sede oficial · Primera parada",
     name: "Museo Sol del Niño",
     note: "Mexicali, Baja California",
+    web: "soldelnino.org",
   },
 };
 
-export const editions = {
-  eyebrow: "Calendario evergreen",
-  title: "Mexicali primero. La Baja después.",
-  body: "El nombre del evento es Autoshow Baja. Cada año cambia la ciudad sede. La edición Mexicali abre el formato; las siguientes ediciones rotan dentro del territorio.",
-  list: [
-    {
-      tag: "Edición 2026",
-      city: "Mexicali",
-      status: "En curso",
-      note: "Inscripciones abiertas.",
-    },
-    {
-      tag: "Próxima edición",
-      city: "Tijuana",
-      status: "En planeación",
-      note: "Fecha y venue por anunciar.",
-    },
-    {
-      tag: "Edición futura",
-      city: "Ensenada",
-      status: "Por confirmar",
-      note: "Sujeta a calendario regional.",
-    },
-  ],
-};
-
 export const gallery = {
-  eyebrow: "Territorio",
+  eyebrow: "Postales de la ruta",
   title: "La Baja como escenario.",
-  caption: "Fotografía referencial de la ruta. No representa el evento final.",
+  caption: "Imágenes referenciales. La ruta real arranca el 10 de noviembre.",
 };
 
 export const faq = {
@@ -101,60 +194,76 @@ export const faq = {
   title: "Lo que conviene saber.",
   items: [
     {
-      q: "¿Cuándo y dónde es la Edición Mexicali?",
-      a: "10 de noviembre de 2026, en el Museo Sol del Niño, Mexicali, Baja California.",
+      q: "¿Tiene costo el acceso?",
+      a: "No. La entrada es gratuita. Solo necesitas registrarte aquí para asegurar tu lugar y recibir los avisos.",
     },
     {
-      q: "¿Tiene costo el acceso?",
-      a: "[COSTO POR CONFIRMAR]. La definición final se anuncia con la apertura formal de boletos.",
+      q: "¿Cuándo y dónde es la primera parada?",
+      a: "Martes 10 de noviembre de 2026, en el Museo Sol del Niño, Mexicali, Baja California.",
     },
     {
       q: "¿Es apto para niños?",
-      a: "Sí. El evento está diseñado para familias. La parada KM 01 (Paso Familiar) es la zona principal de actividades para acompañantes.",
+      a: "Sí. Está pensado para familias. La sede es el Museo Sol del Niño, así que las actividades del museo están incluidas.",
+    },
+    {
+      q: "¿Tengo que comprar boleto del museo aparte?",
+      a: "No. El acceso al Autoshow incluye la zona del museo durante el evento.",
     },
     {
       q: "¿Hay food trucks o servicio de alimentos?",
-      a: "[POR CONFIRMAR]. La oferta gastronómica se publica junto con el lineup.",
+      a: "[POR CONFIRMAR]. La oferta gastronómica se publica con el programa final.",
+    },
+    {
+      q: "¿Voy a poder probar los autos?",
+      a: "Sí, con las marcas que tengan zona de prueba. Cada marca define sus dinámicas el día del evento.",
+    },
+    {
+      q: "¿Habrá ediciones en otras ciudades de Baja?",
+      a: "Sí. La ruta se mueve cada año. Después de Mexicali sigue Tijuana y, posteriormente, Ensenada. Las fechas se anuncian al cierre de cada edición.",
     },
     {
       q: "¿Cómo participo como expositor o patrocinador?",
-      a: "Escribir directo a Bravo Publicidad. El cierre comercial se define caso por caso.",
-    },
-    {
-      q: "¿Habrá ediciones en Tijuana o Ensenada?",
-      a: "Sí. Después de Mexicali, la ruta continúa en Tijuana y posteriormente en Ensenada. Las fechas se anuncian al cierre de cada edición.",
+      a: "Escribe directo a Bravo Publicidad. El cierre comercial se define caso por caso.",
     },
   ],
 };
 
 export const registro = {
   eyebrow: "Registro",
-  title: "Reserva tu lugar.",
-  body: "Llena el formulario para recibir la confirmación de fecha, venue y apertura de boletos. El registro no compromete asistencia.",
+  badge: "Acceso gratuito",
+  title: "Súmate a la ruta.",
+  body: "Regístrate para asegurar tu acceso al Autoshow Baja, primera parada Mexicali. Incluye entrada al Museo Sol del Niño durante el evento. Cero costo.",
+  benefits: [
+    { icon: "★", text: "Acceso gratuito al evento" },
+    { icon: "◎", text: "Entrada al Museo Sol del Niño" },
+    { icon: "✿", text: "Actividades para toda la familia" },
+    { icon: "✦", text: "Aviso de aperturas y dinámicas" },
+  ],
   fields: {
     name: "Nombre completo",
-    email: "Correo electrónico",
-    phone: "Teléfono (WhatsApp)",
+    email: "Correo",
+    phone: "Teléfono · WhatsApp",
     party: "¿Cuántos los acompañan?",
-    interest: "Parada de mayor interés",
+    interest: "Lo que más te late ver",
   },
   partyOptions: ["Solo yo", "1 acompañante", "2 a 3", "4 o más"],
   interestOptions: [
-    "KM 01 · Paso Familiar",
-    "KM 02 · Mirador VIP",
-    "KM 03 · Desvío Off-Road",
-    "Toda la ruta",
+    "Autos del día a día",
+    "Autos premium",
+    "4x4 y off-road",
+    "Todo el recorrido",
   ],
-  submit: "Enviar registro",
-  successTitle: "Registro recibido.",
+  submit: "Quiero mi acceso",
+  successTitle: "Quedaste en la lista.",
   successBody:
-    "Te avisamos por correo cuando se confirme fecha, venue y apertura de boletos. Mientras tanto, sigue la cuenta del evento para los avances.",
+    "Te llega un correo con la confirmación. Más cerca de la fecha te avisamos detalles del programa, dinámicas y horarios.",
 };
 
 export const footer = {
   agency: "Bravo Publicidad",
   agencyLine: "Identidad y producción · 2026",
   cityLine: "Mexicali, Baja California",
+  hashtag: "#RutaBaja",
   links: [
     { label: "Instagram", href: "#" },
     { label: "Facebook", href: "#" },
@@ -164,10 +273,16 @@ export const footer = {
 
 export const nav = {
   links: [
-    { label: "El evento", href: "#evento" },
-    { label: "Paradas", href: "#paradas" },
-    { label: "Ediciones", href: "#ediciones" },
+    { label: "El plan", href: "#evento" },
+    { label: "La ruta", href: "#ruta" },
+    { label: "Qué hay", href: "#experiencias" },
+    { label: "Marcas", href: "#lineup" },
     { label: "FAQ", href: "#faq" },
   ],
-  cta: "Registro",
+  cta: "Regístrate gratis",
+};
+
+export const floatingCta = {
+  primary: "Regístrate gratis",
+  secondary: "Acceso libre · 10 NOV",
 };

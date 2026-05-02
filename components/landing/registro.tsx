@@ -21,38 +21,70 @@ export function Registro() {
   return (
     <section
       id="registro"
-      className="py-28 md:py-44 relative overflow-hidden"
+      className="py-24 md:py-36 relative overflow-hidden"
     >
-      <div
-        className="absolute inset-0 pointer-events-none l-grid-bg opacity-50"
-        aria-hidden
-      />
+      <div className="absolute inset-0 pointer-events-none l-grid-bg opacity-50" aria-hidden />
+
       <div className="relative max-w-[1320px] mx-auto px-6 md:px-10">
-        <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.2fr] gap-16 lg:gap-24 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.2fr] gap-14 lg:gap-24 items-start">
           <Reveal>
-            <div className="flex flex-col gap-8 lg:sticky lg:top-28">
-              <div className="flex items-center gap-3">
-                <span className="w-10 h-px" style={{ background: "var(--l-mustard)" }} />
-                <span className="l-eyebrow" style={{ color: "var(--l-mustard)" }}>
-                  {registro.eyebrow}
+            <div className="flex flex-col gap-9 lg:sticky lg:top-28">
+              <span
+                className="inline-flex items-center gap-2 px-3.5 py-2 w-fit"
+                style={{
+                  background: "var(--l-mustard)",
+                  color: "var(--l-ink)",
+                }}
+              >
+                <span style={{ fontSize: 14, lineHeight: 1 }}>★</span>
+                <span className="l-mono text-[11px] tracking-[0.28em] uppercase">
+                  {registro.badge}
                 </span>
-              </div>
+              </span>
 
               <h2
-                className="l-display text-[56px] sm:text-[80px] md:text-[112px]"
-                style={{ color: "var(--l-ink)" }}
+                className="l-display"
+                style={{
+                  fontSize: "clamp(64px, 11vw, 168px)",
+                  color: "var(--l-ink)",
+                  lineHeight: 0.9,
+                }}
               >
                 {registro.title}
               </h2>
 
-              <p className="text-[16px] md:text-[18px] leading-[1.65] max-w-md" style={{ color: "var(--l-ink-soft)" }}>
+              <p className="text-[18px] md:text-[20px] leading-[1.55] max-w-md" style={{ color: "var(--l-ink-soft)" }}>
                 {registro.body}
               </p>
 
-              <div className="flex flex-col gap-3 pt-6 mt-4" style={{ borderTop: "1px solid var(--l-rule-strong)" }}>
-                <Meta label="Edición" value={`Mexicali ${event.year}`} />
-                <Meta label="Fecha" value={event.date} />
+              <ul className="flex flex-col gap-3 mt-2">
+                {registro.benefits.map((b) => (
+                  <li
+                    key={b.text}
+                    className="flex items-center gap-4 py-3"
+                    style={{ borderTop: "1px solid var(--l-rule)" }}
+                  >
+                    <span
+                      className="w-8 h-8 flex items-center justify-center"
+                      style={{ background: "var(--l-ink)", color: "var(--l-mustard)" }}
+                    >
+                      {b.icon}
+                    </span>
+                    <span className="text-[15.5px]" style={{ color: "var(--l-ink)" }}>
+                      {b.text}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+
+              <div
+                className="grid grid-cols-2 mt-4 gap-px"
+                style={{ background: "var(--l-rule-strong)" }}
+              >
+                <Meta label="Arranca" value={event.dateShort} />
                 <Meta label="Sede" value={event.venue} />
+                <Meta label="Ciudad" value="Mexicali, BC" />
+                <Meta label="Acceso" value="Gratuito" />
               </div>
             </div>
           </Reveal>
@@ -78,10 +110,10 @@ export function Registro() {
                   >
                     <div className="flex items-center justify-between">
                       <span className="l-mono text-[10px] tracking-[0.32em] uppercase" style={{ color: "var(--l-mustard)" }}>
-                        Form · 01/01
+                        Acceso · 01/01
                       </span>
-                      <span className="l-mono text-[10px] tracking-[0.32em] uppercase" style={{ color: "var(--l-bg)" }}>
-                        Confidencial
+                      <span className="l-mono text-[10px] tracking-[0.32em] uppercase" style={{ color: "var(--l-bg)", opacity: 0.6 }}>
+                        Gratis
                       </span>
                     </div>
 
@@ -106,20 +138,23 @@ export function Registro() {
                     <button
                       type="submit"
                       disabled={submitting}
-                      className="group inline-flex items-center justify-between gap-4 px-7 py-5 mt-2 transition-colors"
+                      className="group inline-flex items-center justify-between gap-4 px-7 py-5 mt-2 transition-opacity"
                       style={{
                         background: "var(--l-mustard)",
                         color: "var(--l-ink)",
+                        opacity: submitting ? 0.7 : 1,
                       }}
                     >
-                      <span className="l-eyebrow">{submitting ? "Enviando..." : registro.submit}</span>
+                      <span className="l-eyebrow">
+                        {submitting ? "Enviando..." : registro.submit}
+                      </span>
                       <span aria-hidden className="transition-transform group-hover:translate-x-1">
                         →
                       </span>
                     </button>
 
                     <p className="text-[12px] leading-[1.5]" style={{ color: "var(--l-ink-soft)", opacity: 0.7 }}>
-                      Al enviar aceptas recibir actualizaciones del evento al correo y WhatsApp registrados.
+                      Al enviar aceptas recibir actualizaciones del evento al correo y WhatsApp registrados. Sin costo, sin spam.
                     </p>
                   </motion.form>
                 ) : (
@@ -134,12 +169,16 @@ export function Registro() {
                       ✓
                     </span>
                     <h3
-                      className="l-display text-[40px] md:text-[56px]"
-                      style={{ color: "var(--l-bg)" }}
+                      className="l-display"
+                      style={{
+                        fontSize: "clamp(40px, 6vw, 80px)",
+                        color: "var(--l-bg)",
+                        lineHeight: 0.95,
+                      }}
                     >
                       {registro.successTitle}
                     </h3>
-                    <p className="text-[15px] md:text-[16px] leading-[1.65] max-w-md" style={{ color: "var(--l-ink-soft)" }}>
+                    <p className="text-[16px] leading-[1.6] max-w-md" style={{ color: "var(--l-ink-soft)" }}>
                       {registro.successBody}
                     </p>
                     <button
@@ -242,11 +281,14 @@ function Select({
 
 function Meta({ label, value }: { label: string; value: string }) {
   return (
-    <div className="flex items-baseline justify-between gap-6">
+    <div
+      className="flex flex-col gap-1.5 px-4 py-4"
+      style={{ background: "var(--l-bg)" }}
+    >
       <span className="l-mono text-[10px] tracking-[0.28em] uppercase" style={{ color: "var(--l-muted)" }}>
         {label}
       </span>
-      <span className="l-mono text-[12px] tracking-[0.08em] uppercase text-right" style={{ color: "var(--l-ink)" }}>
+      <span className="l-mono text-[12px] tracking-[0.06em] uppercase" style={{ color: "var(--l-ink)" }}>
         {value}
       </span>
     </div>

@@ -43,16 +43,17 @@ export function Footer() {
             borderBottom: "1px solid var(--l-rule-strong)",
           }}
         >
-          <FooterCol title="Evento">
-            <FooterLink href="#evento">Sobre el evento</FooterLink>
-            <FooterLink href="#paradas">Paradas</FooterLink>
-            <FooterLink href="#ediciones">Ediciones</FooterLink>
+          <FooterCol title="La ruta">
+            <FooterLink href="#evento">El plan</FooterLink>
+            <FooterLink href="#ruta">La ruta</FooterLink>
+            <FooterLink href="#experiencias">Qué hay</FooterLink>
+            <FooterLink href="#actividades">Actividades</FooterLink>
             <FooterLink href="#faq">FAQ</FooterLink>
           </FooterCol>
-          <FooterCol title="Comercial">
-            <FooterLink href="#lineup">Marcas</FooterLink>
+          <FooterCol title="Marcas">
+            <FooterLink href="#lineup">Lineup completo</FooterLink>
             <FooterLink href="#patrocinadores">Patrocinadores</FooterLink>
-            <FooterLink href="#registro">Registro</FooterLink>
+            <FooterLink href="#registro">Regístrate gratis</FooterLink>
           </FooterCol>
           <FooterCol title="Redes">
             {footer.links.map((l) => (
