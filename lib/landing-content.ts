@@ -5,9 +5,9 @@ export const event = {
   brand: "Auto Show Baja California",
   edition: "Primera edición · Mexicali",
   year: "2026",
-  date: "10 de noviembre, 2026",
-  dateShort: "10 · NOV · 26",
-  dateLong: "10 de noviembre",
+  date: "14 de noviembre, 2026",
+  dateShort: "14 · NOV · 26",
+  dateLong: "14 de noviembre",
   city: "Mexicali, Baja California",
   venue: "Museo Sol del Niño",
   access: "Acceso gratuito",
@@ -26,12 +26,12 @@ export const stickyBar = {
 };
 
 export const hero = {
-  badge: "Mexicali · 10 de noviembre, 2026",
+  badge: "Mexicali · 14 de noviembre, 2026",
   headline: "El Auto Show familiar de Mexicali.",
   subhead:
     "Pasa el día con la familia. Modelos 2026, marcas de Mexicali, museo abierto. La entrada no se paga.",
   meta: [
-    { label: "Fecha", value: "10 de noviembre, 2026" },
+    { label: "Fecha", value: "14 de noviembre, 2026" },
     { label: "Sede", value: "Museo Sol del Niño · Mexicali" },
     { label: "Acceso", value: "Gratuito · Familiar" },
   ],
@@ -159,7 +159,7 @@ export const route = {
     {
       tag: "1ª edición",
       city: "Mexicali",
-      date: "10 · NOV · 26",
+      date: "14 · NOV · 26",
       status: "Confirmada",
       note: "Museo Sol del Niño. Acceso gratuito.",
       active: true,
@@ -204,7 +204,7 @@ export const sponsors = {
 export const gallery = {
   eyebrow: "Postales del evento",
   title: "Donde sucede el Auto Show.",
-  caption: "Imágenes referenciales. La edición Mexicali es el 10 de noviembre.",
+  caption: "Imágenes referenciales. La edición Mexicali es el 14 de noviembre.",
 };
 
 export const faq = {
@@ -217,7 +217,7 @@ export const faq = {
     },
     {
       q: "¿Cuándo y dónde es?",
-      a: "Martes 10 de noviembre de 2026, en el Museo Sol del Niño, Mexicali, Baja California.",
+      a: "Sábado 14 de noviembre de 2026, en el Museo Sol del Niño, Mexicali, Baja California.",
     },
     {
       q: "¿Es apto para niños?",
@@ -282,7 +282,7 @@ export const footer = {
   agencyLine: "Identidad y producción · 2026",
   cityLine: "Mexicali, Baja California",
   hashtag: "#AutoShowBaja2026",
-  closing: "Mexicali, 10 de noviembre. Te esperamos.",
+  closing: "Mexicali, 14 de noviembre. Te esperamos.",
   links: [
     { label: "Instagram", href: "#" },
     { label: "Facebook", href: "#" },
@@ -303,5 +303,5 @@ export const nav = {
 
 export const floatingCta = {
   primary: "Regístrate gratis",
-  secondary: "Acceso libre · 10 NOV",
+  secondary: "Acceso libre · 14 NOV",
 };

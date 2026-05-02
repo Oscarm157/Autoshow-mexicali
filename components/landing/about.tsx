@@ -95,7 +95,7 @@ export function About() {
                 }}
               >
                 <span className="l-mono text-[10.5px] tracking-[0.24em] uppercase">
-                  Mexicali · 10 NOV
+                  Mexicali · 14 NOV
                 </span>
               </div>
             </div>

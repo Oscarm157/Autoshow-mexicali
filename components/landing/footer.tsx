@@ -19,7 +19,7 @@ export function Footer() {
                 lineHeight: 1.05,
               }}
             >
-              <span className="block">Mexicali, 10 de noviembre.</span>
+              <span className="block">Mexicali, 14 de noviembre.</span>
               <span className="block" style={{ color: "var(--l-mustard)" }}>Te esperamos.</span>
             </h3>
           </div>

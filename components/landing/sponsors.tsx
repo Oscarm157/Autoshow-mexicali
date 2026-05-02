@@ -171,7 +171,7 @@ function VenuePartner() {
           className="l-mono text-[11px] tracking-[0.18em] uppercase"
           style={{ color: "var(--l-ink)" }}
         >
-          10 · NOV · 26
+          14 · NOV · 26
         </span>
       </div>
     </div>
