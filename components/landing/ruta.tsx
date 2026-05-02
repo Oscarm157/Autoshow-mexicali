@@ -7,7 +7,7 @@ export function Ruta() {
   return (
     <section
       id="ruta"
-      className="l-dark relative overflow-hidden py-24 md:py-36"
+      className="l-dark relative overflow-hidden py-20 md:py-28"
     >
       <RoadDecor />
 
@@ -24,21 +24,21 @@ export function Ruta() {
             </div>
           </Reveal>
 
-          <RevealStack className="flex flex-col gap-7">
+          <RevealStack className="flex flex-col gap-6">
             <RevealItem>
               <h2
                 className="l-display"
                 style={{
-                  fontSize: "clamp(56px, 11vw, 168px)",
+                  fontSize: "clamp(34px, 5.5vw, 72px)",
                   color: "var(--l-ink)",
-                  lineHeight: 0.92,
+                  lineHeight: 1,
                 }}
               >
                 {route.title}
               </h2>
             </RevealItem>
             <RevealItem>
-              <p className="text-[18px] md:text-[20px] leading-[1.55] max-w-2xl" style={{ color: "var(--l-ink-soft)" }}>
+              <p className="text-[16px] md:text-[18px] leading-[1.55] max-w-2xl" style={{ color: "var(--l-ink-soft)" }}>
                 {route.intro}
               </p>
             </RevealItem>
@@ -55,14 +55,6 @@ export function Ruta() {
             </div>
           ))}
 
-          <RevealItem>
-            <p
-              className="mt-12 max-w-2xl text-[15px] italic"
-              style={{ color: "var(--l-mustard)", fontFamily: "var(--font-display)" }}
-            >
-              {route.outro}
-            </p>
-          </RevealItem>
         </RevealStack>
       </div>
     </section>
@@ -90,7 +82,7 @@ function StopRow({
 }) {
   return (
     <div
-      className="grid grid-cols-[60px_1fr] md:grid-cols-[120px_140px_1fr_auto] items-baseline gap-4 md:gap-12 py-7 md:py-12 group"
+      className="grid grid-cols-[60px_1fr] md:grid-cols-[120px_140px_1fr_auto] items-baseline gap-4 md:gap-12 py-6 md:py-9 group"
       style={{
         borderTop: "1px solid var(--l-rule-strong)",
         borderBottom: last ? "1px solid var(--l-rule-strong)" : "none",
@@ -113,9 +105,9 @@ function StopRow({
       <h3
         className="l-display"
         style={{
-          fontSize: "clamp(48px, 8vw, 112px)",
+          fontSize: "clamp(32px, 5vw, 64px)",
           color: active ? "var(--l-ink)" : "var(--l-muted)",
-          lineHeight: 0.92,
+          lineHeight: 1,
           transition: "color 240ms",
         }}
       >
@@ -149,12 +141,12 @@ function StopRow({
 function TireTrack({ faded = false }: { faded?: boolean }) {
   return (
     <div
-      className="relative h-16 md:h-24 ml-[60px] md:ml-[120px] overflow-hidden"
+      className="relative h-10 md:h-14 ml-[60px] md:ml-[120px] overflow-hidden"
       aria-hidden
-      style={{ opacity: faded ? 0.42 : 0.78 }}
+      style={{ opacity: faded ? 0.28 : 0.55 }}
     >
       <svg
-        viewBox="0 0 600 96"
+        viewBox="0 0 600 56"
         preserveAspectRatio="none"
         className="absolute inset-0 w-full h-full"
       >
@@ -163,27 +155,27 @@ function TireTrack({ faded = false }: { faded?: boolean }) {
             id={`tread-${faded ? "f" : "n"}`}
             x="0"
             y="0"
-            width="14"
-            height="6"
+            width="10"
+            height="3"
             patternUnits="userSpaceOnUse"
           >
-            <rect x="0" y="0" width="9" height="6" fill="var(--l-mustard)" />
+            <rect x="0" y="0" width="6" height="3" fill="var(--l-mustard)" />
           </pattern>
         </defs>
         <path
-          d="M -10 18 C 120 6, 240 70, 360 36 S 580 64, 620 30"
+          d="M -10 16 C 120 6, 240 38, 360 22 S 580 36, 620 18"
           fill="none"
           stroke={`url(#tread-${faded ? "f" : "n"})`}
-          strokeWidth="6"
+          strokeWidth="3"
           strokeLinecap="butt"
         />
         <path
-          d="M -10 28 C 120 16, 240 80, 360 46 S 580 74, 620 40"
+          d="M -10 22 C 120 12, 240 44, 360 28 S 580 42, 620 24"
           fill="none"
           stroke={`url(#tread-${faded ? "f" : "n"})`}
-          strokeWidth="6"
+          strokeWidth="2.5"
           strokeLinecap="butt"
-          opacity="0.55"
+          opacity="0.5"
         />
       </svg>
     </div>

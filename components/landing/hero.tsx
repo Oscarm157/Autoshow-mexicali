@@ -11,7 +11,7 @@ export function Hero() {
   return (
     <section
       id="top"
-      className="relative min-h-[100svh] flex flex-col overflow-hidden"
+      className="relative flex flex-col overflow-hidden"
     >
       <div className="absolute inset-0 z-0">
         <Image
@@ -26,25 +26,18 @@ export function Hero() {
           className="absolute inset-0"
           style={{
             background:
-              "linear-gradient(180deg, rgba(239,233,221,0.92) 0%, rgba(239,233,221,0.55) 38%, rgba(239,233,221,0.25) 60%, rgba(239,233,221,0.78) 100%)",
-          }}
-        />
-        <div
-          className="absolute inset-0 mix-blend-multiply"
-          style={{
-            background:
-              "radial-gradient(ellipse 100% 80% at 70% 100%, rgba(184,137,58,0.18), transparent 60%)",
+              "linear-gradient(180deg, rgba(239,233,221,0.96) 0%, rgba(239,233,221,0.65) 35%, rgba(239,233,221,0.35) 60%, rgba(239,233,221,0.85) 100%)",
           }}
         />
       </div>
 
       <div className="relative z-10 flex-1 flex flex-col">
-        <div className="flex-1 max-w-[1320px] mx-auto px-6 md:px-10 w-full pt-20 md:pt-28 pb-12 flex flex-col justify-center">
+        <div className="max-w-[1320px] mx-auto px-6 md:px-10 w-full pt-32 md:pt-40 pb-12 md:pb-16">
           <motion.div
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="flex items-center gap-4 mb-8"
+            className="flex items-center gap-4 mb-7"
           >
             <span
               className="inline-flex items-center gap-2 px-3.5 py-1.5"
@@ -53,51 +46,45 @@ export function Hero() {
                 color: "var(--l-bg)",
               }}
             >
-              <span className="w-1.5 h-1.5 rounded-full pulse-dot" style={{ background: "var(--l-mustard)" }} />
-              <span className="l-mono text-[10px] tracking-[0.32em] uppercase">
+              <span
+                className="w-1.5 h-1.5 rounded-full pulse-dot"
+                style={{ background: "var(--l-mustard)" }}
+              />
+              <span className="l-mono text-[10px] tracking-[0.28em] uppercase">
                 {hero.badge}
               </span>
             </span>
             <span className="hidden sm:flex items-center gap-2">
               <span className="w-12 h-px" style={{ background: "var(--l-ink)" }} />
-              <span className="l-mono text-[10px] tracking-[0.28em] uppercase" style={{ color: "var(--l-ink)" }}>
+              <span
+                className="l-mono text-[10px] tracking-[0.28em] uppercase"
+                style={{ color: "var(--l-ink)" }}
+              >
                 {event.dateShort}
               </span>
             </span>
           </motion.div>
 
-          <h1
-            className="l-display"
+          <motion.h1
+            initial={{ opacity: 0, y: 24, filter: "blur(8px)" }}
+            animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+            transition={{ duration: 0.9, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
+            className="l-display max-w-[18ch]"
             style={{
-              fontSize: "clamp(72px, 14.5vw, 240px)",
+              fontSize: "clamp(40px, 6.4vw, 96px)",
               color: "var(--l-ink)",
-              lineHeight: 0.88,
+              lineHeight: 0.98,
             }}
           >
-            {hero.display.map((word, i) => (
-              <motion.span
-                key={i}
-                initial={{ opacity: 0, y: 36, filter: "blur(12px)" }}
-                animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
-                transition={{ duration: 0.95, delay: 0.18 + i * 0.16, ease: [0.16, 1, 0.3, 1] }}
-                className="block"
-                style={i === 1 ? { color: "var(--l-mustard)" } : undefined}
-              >
-                {word}
-              </motion.span>
-            ))}
-          </h1>
+            {hero.headline}
+          </motion.h1>
 
           <motion.p
-            initial={{ opacity: 0, y: 16 }}
+            initial={{ opacity: 0, y: 14 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.85 }}
-            className="max-w-2xl text-[19px] md:text-[24px] leading-snug mt-10"
-            style={{
-              color: "var(--l-ink)",
-              fontFamily: "var(--font-display)",
-              fontStyle: "italic",
-            }}
+            transition={{ duration: 0.7, delay: 0.55 }}
+            className="max-w-2xl text-[16px] md:text-[19px] leading-[1.55] mt-7"
+            style={{ color: "var(--l-ink-soft)" }}
           >
             {hero.subhead}
           </motion.p>
@@ -105,7 +92,32 @@ export function Hero() {
           <motion.div
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 1 }}
+            transition={{ duration: 0.7, delay: 0.75 }}
+            className="grid grid-cols-1 sm:grid-cols-3 gap-x-10 gap-y-4 max-w-3xl mt-10 pt-7"
+            style={{ borderTop: "1px solid var(--l-rule-strong)" }}
+          >
+            {hero.meta.map((m) => (
+              <div key={m.label} className="flex flex-col gap-1.5">
+                <span
+                  className="l-mono text-[10px] tracking-[0.28em] uppercase"
+                  style={{ color: "var(--l-muted)" }}
+                >
+                  {m.label}
+                </span>
+                <span
+                  className="l-mono text-[13px] tracking-[0.04em] uppercase"
+                  style={{ color: "var(--l-ink)" }}
+                >
+                  {m.value}
+                </span>
+              </div>
+            ))}
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 12 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 0.95 }}
             className="flex flex-wrap items-center gap-5 mt-10"
           >
             <a
@@ -124,7 +136,7 @@ export function Hero() {
               </span>
             </a>
             <a
-              href="#evento"
+              href="#concepto"
               className="inline-flex items-center gap-2 l-mono uppercase text-[12px] tracking-[0.18em]"
               style={{ color: "var(--l-ink)" }}
             >
@@ -137,39 +149,37 @@ export function Hero() {
         <div
           className="relative z-10 border-t"
           style={{
-            background: "rgba(20,20,20,0.92)",
+            background: "rgba(20,20,20,0.94)",
             color: "var(--l-bg)",
             borderColor: "var(--l-mustard)",
           }}
         >
-          <div className="max-w-[1320px] mx-auto px-6 md:px-10 py-5 md:py-6 flex flex-col md:flex-row md:items-center gap-4 md:gap-10">
-            <div className="flex items-center gap-3 shrink-0">
-              <span className="l-mono text-[10px] tracking-[0.32em] uppercase" style={{ color: "var(--l-mustard)" }}>
-                {hero.signage.label}
-              </span>
-              <span className="l-display text-[22px]" style={{ color: "var(--l-bg)" }}>
-                {hero.signage.city}
-              </span>
-            </div>
+          <div className="max-w-[1320px] mx-auto px-6 md:px-10 py-5 flex flex-col md:flex-row md:items-center gap-4 md:gap-10">
             <span
-              className="hidden md:block w-px h-8"
+              className="l-mono text-[10px] tracking-[0.32em] uppercase shrink-0"
+              style={{ color: "var(--l-mustard)" }}
+            >
+              Marcas confirmadas
+            </span>
+            <span
+              className="hidden md:block w-px h-7"
               style={{ background: "rgba(239,233,221,0.2)" }}
             />
-            <div className="flex flex-wrap items-center gap-x-8 gap-y-3 flex-1">
+            <div className="flex flex-wrap items-center gap-x-10 gap-y-4 flex-1">
               {heroBrands.map((b) => (
                 <span
                   key={b.slug}
-                  className="opacity-90 hover:opacity-100 transition-opacity"
+                  className="opacity-95"
                   style={{ color: "var(--l-bg)" }}
                 >
-                  <BrandMark slug={b.slug} size={22} />
+                  <BrandMark slug={b.slug} size={20} />
                 </span>
               ))}
               <span
                 className="l-mono text-[10px] tracking-[0.24em] uppercase"
                 style={{ color: "var(--l-mustard)" }}
               >
-                · y 8 marcas más
+                + 8 marcas más
               </span>
             </div>
           </div>

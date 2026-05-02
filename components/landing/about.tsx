@@ -26,9 +26,9 @@ export function About() {
                 <h2
                   className="l-display"
                   style={{
-                    fontSize: "clamp(40px, 7vw, 96px)",
+                    fontSize: "clamp(32px, 5vw, 64px)",
                     color: "var(--l-ink)",
-                    lineHeight: 0.95,
+                    lineHeight: 1.02,
                   }}
                 >
                   {about.title}
@@ -70,8 +70,8 @@ export function About() {
           <Reveal delay={0.15} className="relative">
             <div className="relative aspect-[4/5] w-full">
               <Image
-                src="/hero/gallery-toyota.webp"
-                alt="Toyota Land Cruiser en mirador de Baja California"
+                src="/hero/about-suv.webp"
+                alt="SUV familiar 2026 al atardecer en Baja California"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 className="object-cover"
@@ -84,7 +84,7 @@ export function About() {
                 }}
               >
                 <span className="l-mono text-[10.5px] tracking-[0.24em] uppercase">
-                  Postal · Sea of Cortez
+                  Modelos 2026
                 </span>
               </div>
               <div
@@ -95,7 +95,7 @@ export function About() {
                 }}
               >
                 <span className="l-mono text-[10.5px] tracking-[0.24em] uppercase">
-                  Capítulo 01
+                  Mexicali · 10 NOV
                 </span>
               </div>
             </div>

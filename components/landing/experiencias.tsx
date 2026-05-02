@@ -5,7 +5,7 @@ import { Reveal, RevealStack, RevealItem } from "./reveal";
 import { experiences } from "@/lib/landing-content";
 
 const photos = [
-  "/hero/gallery-toyota.webp",
+  "/hero/about-suv.webp",
   "/hero/gallery-mazda.webp",
   "/hero/gallery-polaris.webp",
 ];

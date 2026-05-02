@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Reveal, RevealStack, RevealItem } from "./reveal";
 import { sponsors } from "@/lib/landing-content";
 
@@ -122,38 +123,47 @@ function SponsorTier({
 function VenuePartner() {
   return (
     <div
-      className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6 p-8 md:p-10"
+      className="grid grid-cols-1 md:grid-cols-[260px_1fr_auto] items-center gap-6 md:gap-10 p-7 md:p-10"
       style={{
         background: "var(--l-bg)",
         border: "1px solid var(--l-ink)",
       }}
     >
-      <div className="flex items-center gap-5">
-        <span
-          className="l-display text-[44px] md:text-[56px]"
-          style={{ color: "var(--l-mustard)" }}
-        >
-          ✶
-        </span>
-        <div className="flex flex-col gap-1">
-          <span className="l-mono text-[10px] tracking-[0.32em] uppercase" style={{ color: "var(--l-mustard)" }}>
-            {sponsors.venuePartner.label}
-          </span>
-          <span
-            className="l-display text-[24px] md:text-[28px]"
-            style={{ color: "var(--l-ink)" }}
-          >
-            {sponsors.venuePartner.name}
-          </span>
-          <span className="l-mono text-[11px] tracking-[0.16em] uppercase" style={{ color: "var(--l-muted)" }}>
-            {sponsors.venuePartner.note}
-          </span>
-        </div>
+      <div
+        className="relative w-full aspect-[5/3] md:aspect-[3/2]"
+        style={{
+          background: "linear-gradient(135deg, #1E73CE 0%, #1A5CA8 100%)",
+        }}
+      >
+        <Image
+          src={sponsors.venuePartner.logo}
+          alt={sponsors.venuePartner.name}
+          fill
+          sizes="260px"
+          className="object-contain p-3"
+        />
       </div>
 
-      <div
-        className="flex flex-col gap-2 md:items-end"
-      >
+      <div className="flex flex-col gap-2">
+        <span className="l-mono text-[10px] tracking-[0.32em] uppercase" style={{ color: "var(--l-mustard)" }}>
+          {sponsors.venuePartner.label}
+        </span>
+        <span
+          className="l-display"
+          style={{
+            fontSize: "clamp(24px, 3vw, 36px)",
+            color: "var(--l-ink)",
+            lineHeight: 1,
+          }}
+        >
+          {sponsors.venuePartner.name}
+        </span>
+        <span className="l-mono text-[11px] tracking-[0.16em] uppercase" style={{ color: "var(--l-muted)" }}>
+          {sponsors.venuePartner.note}
+        </span>
+      </div>
+
+      <div className="flex flex-col gap-2 md:items-end">
         <span className="l-mono text-[10px] tracking-[0.24em] uppercase" style={{ color: "var(--l-muted)" }}>
           Sede de la edición
         </span>

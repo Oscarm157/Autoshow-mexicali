@@ -14,13 +14,13 @@ export function Footer() {
             <h3
               className="l-display"
               style={{
-                fontSize: "clamp(56px, 11vw, 168px)",
+                fontSize: "clamp(36px, 6vw, 80px)",
                 color: "var(--l-ink)",
-                lineHeight: 0.92,
+                lineHeight: 1,
               }}
             >
-              <span className="block">Una ruta.</span>
-              <span className="block" style={{ color: "var(--l-mustard)" }}>La Baja.</span>
+              <span className="block">El Auto Show familiar</span>
+              <span className="block" style={{ color: "var(--l-mustard)" }}>de Baja California.</span>
             </h3>
           </div>
           <div className="flex flex-col gap-3 md:items-end">

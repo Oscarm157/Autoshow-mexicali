@@ -2,6 +2,7 @@ import { StickyBar } from "@/components/landing/sticky-bar";
 import { Nav } from "@/components/landing/nav";
 import { Hero } from "@/components/landing/hero";
 import { About } from "@/components/landing/about";
+import { Concepto } from "@/components/landing/concepto";
 import { Ruta } from "@/components/landing/ruta";
 import { Experiencias } from "@/components/landing/experiencias";
 import { Lineup } from "@/components/landing/lineup";
@@ -20,8 +21,9 @@ export default function Page() {
       <Nav />
       <Hero />
       <About />
-      <Ruta />
+      <Concepto />
       <Experiencias />
+      <Ruta />
       <Lineup />
       <Actividades />
       <Sponsors />

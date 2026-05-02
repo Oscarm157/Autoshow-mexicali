@@ -16,11 +16,52 @@ const replicate = new Replicate({ auth: process.env.REPLICATE_API_TOKEN });
 const MODEL = "google/nano-banana";
 
 const styleSuffix =
-  ", shot on 35mm film, golden hour in Baja California, low contrast, " +
+  ", shot on 35mm film, golden hour in Baja California, soft contrast, " +
   "muted earth tones, photographic grain, editorial automotive photography, " +
   "cinematic composition, no people facing camera";
 
 const jobs = [
+  {
+    name: "about-suv",
+    aspect_ratio: "4:5",
+    prompt:
+      "A modern 2026 mid-size family SUV in soft pearl white, parked at a Baja California " +
+      "scenic overlook at golden hour with the desert and distant mountains behind. " +
+      "Sleek contemporary design, no visible badges or logos, three-quarter front hero angle, " +
+      "polished glossy paint, aspirational lifestyle automotive photography, soft warm light, " +
+      "no people in frame, no dust" +
+      styleSuffix,
+  },
+  {
+    name: "concept-autoshow",
+    aspect_ratio: "4:3",
+    prompt:
+      "An outdoor automotive showcase event in a large modern museum parking lot, " +
+      "rows of brand-new contemporary cars on display under white event tents and flags, " +
+      "string lights overhead, families walking around in soft silhouette, " +
+      "Mexicali desert sky at golden hour, polished cars reflecting warm light, " +
+      "festival but elegant atmosphere, wide cinematic shot" +
+      styleSuffix,
+  },
+  {
+    name: "concept-museo",
+    aspect_ratio: "4:3",
+    prompt:
+      "Interior of a bright, modern, colorful interactive children's science museum, " +
+      "kids in soft silhouette engaging with hands-on exhibits, large geometric architectural shapes, " +
+      "vibrant playful environment, warm natural light from skylights, no faces visible, " +
+      "wide angle architectural lifestyle photography, joyful but clean composition",
+  },
+  {
+    name: "gallery-toyota",
+    aspect_ratio: "3:4",
+    prompt:
+      "A brand-new 2026 Toyota SUV in pearl white, parked on a Baja California cliff " +
+      "overlook with the Sea of Cortez visible in the background, three-quarter front angle, " +
+      "spotless polished paint, glossy reflections, modern and aspirational, " +
+      "TOYOTA badge subtly visible on the front grille, golden hour, no people, no dust" +
+      styleSuffix,
+  },
   {
     name: "hero-road",
     aspect_ratio: "16:9",
@@ -28,17 +69,6 @@ const jobs = [
       "An empty curving desert highway cutting through La Rumorosa mountain pass in " +
       "Baja California at sunset, tall fan palms silhouetted against amber sky, " +
       "wide cinematic landscape, no cars in frame" +
-      styleSuffix,
-  },
-  {
-    name: "gallery-toyota",
-    aspect_ratio: "3:4",
-    prompt:
-      "A brand-new Toyota Land Cruiser, freshly detailed and polished, " +
-      "posed at a scenic Baja California overlook with the Sea of Cortez behind, " +
-      "the TOYOTA badge clearly readable on the front grille, three-quarter front hero angle, " +
-      "spotless paint, glossy reflections, automotive commercial photography, " +
-      "warm golden hour light, no dust, no people" +
       styleSuffix,
   },
   {
