@@ -172,7 +172,7 @@ export function Hero() {
                   className="opacity-95"
                   style={{ color: "var(--l-bg)" }}
                 >
-                  <BrandMark slug={b.slug} size={50} />
+                  <BrandMark slug={b.slug} size={33} />
                 </span>
               ))}
               <span
