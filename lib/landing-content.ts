@@ -224,7 +224,7 @@ export const faq = {
     },
     {
       q: "¿Tengo que comprar boleto del museo aparte?",
-      a: "No. El acceso al Auto Show incluye la entrada al museo durante el día del evento.",
+      a: "No. El acceso al museo durante el día del evento está incluido sin costo, pero necesitas registrarte aquí para asegurar el lugar.",
     },
     {
       q: "¿Hay food trucks o servicio de alimentos?",
