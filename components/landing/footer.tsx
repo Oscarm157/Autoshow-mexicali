@@ -19,8 +19,8 @@ export function Footer() {
                 lineHeight: 1.05,
               }}
             >
-              <span className="block">El Auto Show familiar más importante</span>
-              <span className="block" style={{ color: "var(--l-mustard)" }}>de Baja California.</span>
+              <span className="block">Mexicali, 10 de noviembre.</span>
+              <span className="block" style={{ color: "var(--l-mustard)" }}>Te esperamos.</span>
             </h3>
           </div>
           <div className="flex flex-col gap-3 md:items-end">

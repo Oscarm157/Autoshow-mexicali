@@ -27,9 +27,9 @@ export const stickyBar = {
 
 export const hero = {
   badge: "Mexicali · 10 de noviembre, 2026",
-  headline: "Auto Show Baja California 2026",
+  headline: "El Auto Show familiar de Mexicali.",
   subhead:
-    "Ven y conoce las mejores marcas de autos del año, en un solo lugar y con entrada gratis. La primera edición es en Mexicali, en el Museo Sol del Niño. Plan completo para toda la familia.",
+    "Pasa el día con la familia. Modelos 2026, marcas de Mexicali, museo abierto. La entrada no se paga.",
   meta: [
     { label: "Fecha", value: "10 de noviembre, 2026" },
     { label: "Sede", value: "Museo Sol del Niño · Mexicali" },
@@ -39,10 +39,10 @@ export const hero = {
 
 export const about = {
   eyebrow: "Sobre el evento",
-  title: "El evento automotriz más esperado de Mexicali.",
+  title: "Un día con autos y museo, en un mismo lugar.",
   body: [
-    "Las marcas más importantes de Baja California reunidas en un solo lugar. Modelos 2026 para conocer, comparar y agendar prueba de manejo.",
-    "Entrada gratuita y actividades para toda la familia. Un día completo dentro del Museo Sol del Niño.",
+    "Las marcas de Mexicali se juntan en el estacionamiento del Museo Sol del Niño con sus modelos 2026. Vienes a ver carros, comparar y, si quieres, agendar prueba de manejo.",
+    "Mientras tanto, el museo abre sus exhibiciones para que los niños se diviertan. La entrada al evento incluye el acceso al museo durante el día. Sin costo.",
   ],
   pills: [
     "Para la familia",
@@ -56,9 +56,9 @@ export const about = {
 
 export const concept = {
   eyebrow: "Cómo funciona",
-  title: "Auto Show afuera. Museo abierto adentro.",
+  title: "Mientras tú ves los autos, los niños tienen su museo.",
   intro:
-    "Todo el evento dentro del Museo Sol del Niño. Una sola visita, dos planes en uno.",
+    "Todo el evento es dentro del Museo Sol del Niño. Una visita, dos planes.",
   zones: [
     {
       tag: "Zona 01",
@@ -152,9 +152,9 @@ export const brands = [
 
 export const route = {
   eyebrow: "Próximas ediciones",
-  title: "Mexicali primero. Después seguimos por Baja.",
+  title: "Esta es la primera edición. Vienen más.",
   intro:
-    "El Auto Show Baja California recorrerá las principales ciudades de la región. Mexicali abre la primera edición.",
+    "Mexicali abre el calendario. La siguiente edición será en otra ciudad de Baja California.",
   list: [
     {
       tag: "1ª edición",
@@ -249,8 +249,8 @@ export const faq = {
 export const registro = {
   eyebrow: "Registro",
   badge: "Acceso gratuito",
-  title: "Asegura tu lugar.",
-  body: "Regístrate sin costo y recibe la confirmación con todos los detalles del evento, programa de actividades y horarios. Cupo limitado.",
+  title: "Avísanos que vienes y te mandamos los detalles.",
+  body: "Llena el formulario y más cerca de la fecha te enviamos el programa, horarios y cualquier dinámica de las marcas. Sin costo, sin compromiso.",
   benefits: [
     { icon: "★", text: "Acceso gratuito al evento" },
     { icon: "◎", text: "Entrada al Museo Sol del Niño" },
@@ -271,10 +271,10 @@ export const registro = {
     "Off-road y 4x4",
     "Todas las áreas",
   ],
-  submit: "Quiero mi acceso",
-  successTitle: "Quedaste registrado.",
+  submit: "Sí, voy",
+  successTitle: "Te esperamos.",
   successBody:
-    "Te llega un correo con la confirmación. Más cerca de la fecha te avisamos detalles del programa, dinámicas y horarios.",
+    "Listo. Te llega un correo con la confirmación. Más cerca de la fecha te avisamos del programa y los horarios.",
 };
 
 export const footer = {
@@ -282,7 +282,7 @@ export const footer = {
   agencyLine: "Identidad y producción · 2026",
   cityLine: "Mexicali, Baja California",
   hashtag: "#AutoShowBaja2026",
-  closing: "El Auto Show familiar más importante de Baja California.",
+  closing: "Mexicali, 10 de noviembre. Te esperamos.",
   links: [
     { label: "Instagram", href: "#" },
     { label: "Facebook", href: "#" },
