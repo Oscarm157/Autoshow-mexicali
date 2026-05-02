@@ -29,7 +29,7 @@ export const hero = {
   badge: "Mexicali · 14 de noviembre, 2026",
   headline: "El Auto Show familiar de Mexicali.",
   subhead:
-    "Pasa el día con la familia. Los modelos más nuevos, las marcas de Mexicali y diversión para los niños. La entrada no se paga.",
+    "Pasa el día con la familia. Los modelos más nuevos, las mejores marcas automotrices de Mexicali y diversión para los niños. La entrada no se paga.",
   meta: [
     { label: "Fecha", value: "14 de noviembre, 2026" },
     { label: "Sede", value: "Museo Sol del Niño · Mexicali" },
@@ -41,7 +41,7 @@ export const about = {
   eyebrow: "Sobre el evento",
   title: "Un día con autos y diversión, en un mismo lugar.",
   body: [
-    "Las marcas de Mexicali se juntan en el estacionamiento del Museo Sol del Niño con los modelos más nuevos. Vienes a ver carros, comparar y, si quieres, agendar prueba de manejo.",
+    "Las mejores marcas automotrices de Mexicali se juntan en el estacionamiento del Museo Sol del Niño con los modelos más nuevos. Vienes a ver carros, comparar y, si quieres, agendar prueba de manejo.",
     "Mientras tanto, los niños se divierten en las exhibiciones del Museo Sol del Niño. La entrada al evento incluye todo. Sin costo.",
   ],
   pills: [
@@ -65,7 +65,7 @@ export const concept = {
       label: "Afuera",
       title: "Auto Show",
       lead: "Estacionamiento del museo",
-      body: "Las agencias y marcas de Mexicali con los modelos más nuevos en el estacionamiento del museo. Pruebas de manejo, recorridos guiados, food trucks y música.",
+      body: "Las agencias y distribuidores de las mejores marcas automotrices de Mexicali con los modelos más nuevos en el estacionamiento del museo. Pruebas de manejo, recorridos guiados, food trucks y música.",
       icon: "directions_car",
       photo: "/hero/concept-autoshow.webp",
     },
@@ -85,7 +85,7 @@ export const concept = {
 export const experiences = {
   eyebrow: "Qué encontrarás",
   title: "Autos para todos los gustos, en un mismo lugar.",
-  body: "Las marcas de Mexicali traen lo más nuevo. Familiares, premium, off-road y más, para que cada quien encuentre el suyo.",
+  body: "Las marcas traen lo más nuevo de cada categoría. Familiares, premium, off-road y más, para que cada quien encuentre el suyo.",
   items: [
     {
       tag: "01",
