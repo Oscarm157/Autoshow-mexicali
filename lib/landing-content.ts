@@ -112,7 +112,7 @@ export const experiences = {
 
 export const activities = {
   eyebrow: "Actividades del evento",
-  title: "Todo lo que vas a poder hacer.",
+  title: "Para disfrutar el día completo.",
   body: "Programa preliminar. El detalle final se confirma con los expositores.",
   items: [
     { icon: "directions_car", text: "Recorridos guiados por marca" },
