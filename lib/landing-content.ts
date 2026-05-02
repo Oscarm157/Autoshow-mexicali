@@ -20,7 +20,7 @@ export const stickyBar = {
   parts: [
     { icon: "★", text: "Acceso gratuito" },
     { icon: "✿", text: "Para toda la familia" },
-    { icon: "◎", text: "Museo del Niño incluido" },
+    { icon: "◎", text: "Museo del Niño" },
     { icon: "→", text: "Regístrate" },
   ],
 };
