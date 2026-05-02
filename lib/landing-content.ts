@@ -39,7 +39,7 @@ export const hero = {
 
 export const about = {
   eyebrow: "Sobre el evento",
-  title: "Un día con autos y museo, en un mismo lugar.",
+  title: "Un día con autos y diversión, en un mismo lugar.",
   body: [
     "Las marcas de Mexicali se juntan en el estacionamiento del Museo Sol del Niño con sus los modelos más nuevos. Vienes a ver carros, comparar y, si quieres, agendar prueba de manejo.",
     "Mientras tanto, el museo abre sus exhibiciones para que los niños se diviertan. La entrada al evento incluye el acceso al museo durante el día. Sin costo.",
