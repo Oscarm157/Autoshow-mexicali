@@ -22,6 +22,17 @@ const styleSuffix =
 
 const jobs = [
   {
+    name: "family-highlander",
+    aspect_ratio: "4:3",
+    prompt:
+      "A brand-new 2025 Toyota Highlander SUV in pearl white, polished and detailed, " +
+      "parked at a Baja California scenic overlook at golden hour, " +
+      "three-quarter front hero angle, the TOYOTA badge clearly visible on the front grille, " +
+      "modern aspirational family lifestyle automotive photography, glossy paint, " +
+      "warm light, Sea of Cortez and distant mountains in the background, no people, no dust" +
+      styleSuffix,
+  },
+  {
     name: "about-suv",
     aspect_ratio: "4:5",
     prompt:
