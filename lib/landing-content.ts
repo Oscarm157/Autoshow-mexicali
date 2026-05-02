@@ -151,7 +151,7 @@ export const brands = [
 
 export const route = {
   eyebrow: "Próximas ediciones",
-  title: "Esta es la primera edición. Vienen más.",
+  title: "Empezamos en Mexicali. La ruta sigue por Baja.",
   intro:
     "Mexicali abre el calendario. La siguiente edición será en otra ciudad de Baja California.",
   list: [
