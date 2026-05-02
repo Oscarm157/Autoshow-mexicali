@@ -26,7 +26,7 @@ export function Hero() {
           className="absolute inset-0"
           style={{
             background:
-              "linear-gradient(180deg, rgba(239,233,221,0.96) 0%, rgba(239,233,221,0.65) 35%, rgba(239,233,221,0.35) 60%, rgba(239,233,221,0.85) 100%)",
+              "linear-gradient(180deg, rgba(239,233,221,0.97) 0%, rgba(239,233,221,0.85) 50%, rgba(239,233,221,0.5) 75%, rgba(239,233,221,0.85) 100%)",
           }}
         />
       </div>
@@ -83,8 +83,8 @@ export function Hero() {
             initial={{ opacity: 0, y: 14 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.55 }}
-            className="max-w-2xl text-[16px] md:text-[19px] leading-[1.55] mt-7"
-            style={{ color: "var(--l-ink-soft)" }}
+            className="max-w-2xl text-[18px] md:text-[22px] leading-[1.5] mt-7 font-medium"
+            style={{ color: "var(--l-ink)" }}
           >
             {hero.subhead}
           </motion.p>
