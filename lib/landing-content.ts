@@ -84,8 +84,8 @@ export const concept = {
 
 export const experiences = {
   eyebrow: "Qué encontrarás",
-  title: "Tres tipos de autos en un solo lugar.",
-  body: "Las marcas de Mexicali traen lo más nuevo del año. Tres categorías para que cada quien encuentre lo que busca.",
+  title: "Autos para todos los gustos, en un mismo lugar.",
+  body: "Las marcas de Mexicali traen lo más nuevo. Familiares, premium, off-road y más, para que cada quien encuentre el suyo.",
   items: [
     {
       tag: "01",
