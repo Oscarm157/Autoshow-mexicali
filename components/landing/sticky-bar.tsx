@@ -9,7 +9,7 @@ export function StickyBar() {
       initial={{ y: -28, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ delay: 0.4, duration: 0.6 }}
-      className="hidden md:block w-full relative z-[60]"
+      className="hidden md:block w-full fixed top-0 inset-x-0 z-50"
       style={{
         background: "var(--l-ink)",
         color: "var(--l-bg)",

@@ -25,11 +25,12 @@ export function Concepto() {
           <RevealStack className="flex flex-col gap-6">
             <RevealItem>
               <h2
-                className="l-display"
+                className="l-display max-w-[14ch]"
                 style={{
-                  fontSize: "clamp(36px, 6vw, 80px)",
+                  fontSize: "clamp(28px, 4.2vw, 56px)",
                   color: "var(--l-ink)",
-                  lineHeight: 0.96,
+                  lineHeight: 1.05,
+                  letterSpacing: "-0.015em",
                 }}
               >
                 {concept.title}

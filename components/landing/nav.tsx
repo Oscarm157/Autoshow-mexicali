@@ -20,7 +20,7 @@ export function Nav() {
       initial={{ y: -32, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-      className="fixed top-0 inset-x-0 z-50"
+      className="fixed top-0 md:top-9 inset-x-0 z-40"
       style={{
         background: scrolled ? "rgba(239, 233, 221, 0.92)" : "transparent",
         backdropFilter: scrolled ? "blur(8px) saturate(120%)" : "none",
