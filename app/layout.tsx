@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Autoshow Mexicali · Propuesta de marca",
+  title: "Autoshow Baja · Edición Mexicali 2026",
   description:
-    "Sistema visual evergreen para Autoshow Mexicali. Dos opciones: Familia y sol y Ruta Baja. Bravo Publicidad.",
+    "Una ruta. Tres paradas. Familiar, off-road y VIP en un mismo recorrido. Edición Mexicali 2026 del Autoshow Baja.",
 };
 
 export default function RootLayout({

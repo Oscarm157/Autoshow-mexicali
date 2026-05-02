@@ -1,22 +1,29 @@
-import { SlidesDeck } from "@/components/slides-deck";
-import { S01Hero } from "@/components/slides/s01-hero";
-import { S02Contexto } from "@/components/slides/s02-contexto";
-import { S03Tagline } from "@/components/slides/s03-tagline";
-import { S04Logo } from "@/components/slides/s04-logo";
-import { S05Zonas } from "@/components/slides/s05-zonas";
-import { S06Plan } from "@/components/slides/s06-plan";
-import { S07Cierre } from "@/components/slides/s07-cierre";
+import { Nav } from "@/components/landing/nav";
+import { Hero } from "@/components/landing/hero";
+import { About } from "@/components/landing/about";
+import { Paradas } from "@/components/landing/paradas";
+import { Lineup } from "@/components/landing/lineup";
+import { Sponsors } from "@/components/landing/sponsors";
+import { Ediciones } from "@/components/landing/ediciones";
+import { Galeria } from "@/components/landing/galeria";
+import { Faq } from "@/components/landing/faq";
+import { Registro } from "@/components/landing/registro";
+import { Footer } from "@/components/landing/footer";
 
 export default function Page() {
   return (
-    <SlidesDeck ruta="a">
-      <S01Hero />
-      <S02Contexto />
-      <S03Tagline />
-      <S04Logo />
-      <S05Zonas />
-      <S06Plan />
-      <S07Cierre />
-    </SlidesDeck>
+    <main className="l-page min-h-screen">
+      <Nav />
+      <Hero />
+      <About />
+      <Paradas />
+      <Lineup />
+      <Sponsors />
+      <Ediciones />
+      <Galeria />
+      <Faq />
+      <Registro />
+      <Footer />
+    </main>
   );
 }

@@ -26,6 +26,78 @@
   --concrete: #A89880;
 }
 
+/* Landing pública — Autoshow Baja, Edición Mexicali (editorial) */
+.l-page {
+  --l-bg: #EFE9DD;            /* off-white editorial */
+  --l-bg-deep: #E5DDC8;       /* alterna secciones */
+  --l-ink: #141414;            /* tinta principal */
+  --l-ink-soft: #2A2A2A;       /* tinta sutil */
+  --l-mustard: #B8893A;        /* acento cálido */
+  --l-mustard-deep: #8C6628;
+  --l-olive: #5A5C3E;          /* secundario frío */
+  --l-rule: rgba(20, 20, 20, 0.12);
+  --l-rule-strong: rgba(20, 20, 20, 0.32);
+  --l-muted: #6B6457;
+
+  /* Aliases para reusar componentes existentes (RutaShield, etc.) */
+  --background: var(--l-bg);
+  --accent: var(--l-ink);
+
+  background: var(--l-bg);
+  color: var(--l-ink);
+}
+
+.l-page .l-dark {
+  --l-bg: #141414;
+  --l-bg-deep: #0E0E0E;
+  --l-ink: #EFE9DD;
+  --l-ink-soft: #C9C2B0;
+  --l-rule: rgba(239, 233, 221, 0.14);
+  --l-rule-strong: rgba(239, 233, 221, 0.36);
+  --l-muted: #9C9283;
+
+  --background: var(--l-bg);
+  --accent: var(--l-ink);
+
+  background: var(--l-bg);
+  color: var(--l-ink);
+}
+
+.l-mono {
+  font-family: ui-monospace, "SFMono-Regular", "JetBrains Mono", Menlo, monospace;
+  letter-spacing: -0.01em;
+}
+
+.l-eyebrow {
+  font-family: var(--font-badge);
+  font-size: 11px;
+  letter-spacing: 0.36em;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.l-display {
+  font-family: var(--font-festival);
+  letter-spacing: -0.02em;
+  line-height: 0.92;
+  text-transform: uppercase;
+}
+
+.l-rule {
+  height: 1px;
+  background: var(--l-rule);
+}
+
+.l-rule-strong {
+  height: 1px;
+  background: var(--l-rule-strong);
+}
+
+.l-grid-bg {
+  background-image: linear-gradient(var(--l-rule) 1px, transparent 1px);
+  background-size: 100% 56px;
+}
+
 /* Ruta B — Ruta Baja (señalética vial) */
 .ruta-b {
   --background: #F2E9D6;           /* crema asfalto */
