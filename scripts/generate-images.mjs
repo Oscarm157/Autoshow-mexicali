@@ -22,6 +22,17 @@ const styleSuffix =
 
 const jobs = [
   {
+    name: "about-polaris",
+    aspect_ratio: "4:5",
+    prompt:
+      "A brand-new Polaris RZR side-by-side in clean factory finish, posed at a Baja California " +
+      "scenic overlook at golden hour, three-quarter front hero angle, no riders, " +
+      "POLARIS branding clearly readable on the bodywork, polished bodywork, no dust, " +
+      "automotive product photography, vertical composition with desert and distant mountains, " +
+      "warm aspirational lifestyle photography" +
+      styleSuffix,
+  },
+  {
     name: "family-highlander",
     aspect_ratio: "4:3",
     prompt:

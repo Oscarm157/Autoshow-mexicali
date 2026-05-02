@@ -70,8 +70,8 @@ export function About() {
           <Reveal delay={0.15} className="relative">
             <div className="relative aspect-[4/5] w-full">
               <Image
-                src="/hero/about-suv.webp"
-                alt="SUV familiar 2026 al atardecer en Baja California"
+                src="/hero/about-polaris.webp"
+                alt="Polaris RZR en mirador de Baja California"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 className="object-cover"
