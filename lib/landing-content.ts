@@ -153,7 +153,7 @@ export const route = {
   eyebrow: "Próximas ediciones",
   title: "Empezamos en Mexicali. La ruta sigue por Baja.",
   intro:
-    "Mexicali abre el calendario. La siguiente edición será en otra ciudad de Baja California.",
+    "De Mexicali al resto de la península. El Auto Show no se queda en una sola ciudad.",
   list: [
     {
       tag: "1ª edición",
