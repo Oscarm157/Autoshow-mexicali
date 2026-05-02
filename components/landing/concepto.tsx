@@ -52,14 +52,6 @@ export function Concepto() {
           ))}
         </RevealStack>
 
-        <Reveal delay={0.2}>
-          <p
-            className="mt-12 md:mt-16 text-[15px] md:text-[17px] italic max-w-2xl mx-auto text-center"
-            style={{ color: "var(--l-mustard)", fontFamily: "var(--font-display)" }}
-          >
-            {concept.closer}
-          </p>
-        </Reveal>
       </div>
     </section>
   );

@@ -79,7 +79,6 @@ export const concept = {
       photo: "/hero/concept-museo.webp",
     },
   ],
-  closer: "Vienes una vez, haces los dos planes.",
 };
 
 export const experiences = {
