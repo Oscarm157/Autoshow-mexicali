@@ -82,6 +82,7 @@ export function BrandMark({
       style={{
         width,
         height: size,
+        maxWidth: "100%",
         backgroundColor: "currentColor",
         WebkitMaskImage: `url(/brands/${slug}.svg)`,
         maskImage: `url(/brands/${slug}.svg)`,

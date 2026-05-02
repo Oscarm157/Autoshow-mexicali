@@ -61,7 +61,7 @@ export function Lineup() {
                 className="inline-flex items-center gap-10"
                 style={{ color: "var(--l-ink)" }}
               >
-                <BrandMark slug={b.slug} size={28} />
+                <BrandMark slug={b.slug} size={70} />
                 <span style={{ color: "var(--l-mustard)", opacity: 0.6 }}>·</span>
               </span>
             ))}
@@ -84,7 +84,7 @@ export function Lineup() {
                 }}
               >
                 <span style={{ color: "var(--l-ink)" }}>
-                  <BrandMark slug={b.slug} size={24} />
+                  <BrandMark slug={b.slug} size={60} />
                 </span>
               </div>
             </RevealItem>
