@@ -249,7 +249,7 @@ export const registro = {
   eyebrow: "Registro",
   badge: "Acceso gratuito",
   title: "Regístrate para acceso gratuito.",
-  body: "Regístrate aquí para entrar gratis al Auto Show y al Museo Sol del Niño durante el evento. Más cerca de la fecha te enviamos el programa y los horarios.",
+  body: "Llena tus datos y listo. Te mandamos la confirmación al correo.",
   benefits: [
     { icon: "★", text: "Acceso gratuito al evento" },
     { icon: "◎", text: "Entrada al Museo Sol del Niño" },
