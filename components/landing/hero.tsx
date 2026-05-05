@@ -16,8 +16,6 @@ export function Hero() {
     version === "mar"
       ? "Carretera de Baja California rumbo a Ensenada"
       : "Carretera de Baja California al atardecer";
-  const editionLogo =
-    version === "mar" ? "/autoshow-logo-azul.png" : "/autoshow-logo-arena.png";
 
   return (
     <section
@@ -43,18 +41,6 @@ export function Hero() {
         />
       </div>
 
-      <div
-        aria-hidden
-        className="pointer-events-none absolute -bottom-32 -right-32 md:-bottom-40 md:-right-40 z-[1] opacity-[0.20]"
-        style={{
-          width: "min(680px, 70vw)",
-          height: "min(680px, 70vw)",
-          backgroundImage: `url(${editionLogo})`,
-          backgroundRepeat: "no-repeat",
-          backgroundPosition: "center",
-          backgroundSize: "contain",
-        }}
-      />
 
       <div className="relative z-10 flex-1 flex flex-col">
         <div className="max-w-[1320px] mx-auto px-6 md:px-10 w-full pt-32 md:pt-40 pb-12 md:pb-16">

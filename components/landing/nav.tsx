@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 import { motion, AnimatePresence } from "motion/react";
 import { nav, event } from "@/lib/landing-content";
 import { useEdition } from "./edition-context";
@@ -32,25 +33,17 @@ export function Nav() {
         transition: "background 280ms ease, border-color 280ms ease, backdrop-filter 280ms ease",
       }}
     >
-      <div
-        aria-hidden
-        className="pointer-events-none absolute inset-0 transition-opacity duration-300"
-        style={{
-          backgroundImage: `url(${editionLogo})`,
-          backgroundRepeat: "no-repeat",
-          backgroundPosition: "right center",
-          backgroundSize: "auto 220%",
-          opacity: scrolled ? 0.14 : 0.22,
-        }}
-      />
-      <div className="relative max-w-[1320px] mx-auto px-6 md:px-10 h-16 md:h-20 flex items-center justify-between">
-        <a href="#top" className="flex items-center gap-3 group">
-          <span
-            className="l-display text-[18px] md:text-[20px]"
-            style={{ color: "var(--l-ink)" }}
-          >
-            {event.brand}
-          </span>
+      <div className="max-w-[1320px] mx-auto px-6 md:px-10 h-16 md:h-20 flex items-center justify-between">
+        <a href="#top" className="flex items-center gap-3 group" aria-label={event.brand}>
+          <Image
+            key={editionLogo}
+            src={editionLogo}
+            alt={event.brand}
+            width={120}
+            height={48}
+            priority
+            className="h-9 md:h-11 w-auto object-contain"
+          />
           <span
             className="hidden sm:inline-block w-6 h-px"
             style={{ background: "var(--l-rule-strong)" }}
