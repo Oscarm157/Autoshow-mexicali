@@ -222,13 +222,13 @@ function Field({
         className="bg-transparent py-3 outline-none text-[16px]"
         style={{
           color: "var(--l-bg)",
-          borderBottom: "1px solid rgba(239,233,221,0.32)",
+          borderBottom: "1px solid rgba(var(--l-bg-rgb),0.32)",
         }}
         onFocus={(e) => {
           e.currentTarget.style.borderBottomColor = "var(--l-mustard)";
         }}
         onBlur={(e) => {
-          e.currentTarget.style.borderBottomColor = "rgba(239,233,221,0.32)";
+          e.currentTarget.style.borderBottomColor = "rgba(var(--l-bg-rgb),0.32)";
         }}
       />
     </label>
@@ -254,9 +254,9 @@ function Select({
         className="bg-transparent py-3 outline-none text-[16px] appearance-none"
         style={{
           color: "var(--l-bg)",
-          borderBottom: "1px solid rgba(239,233,221,0.32)",
+          borderBottom: "1px solid rgba(var(--l-bg-rgb),0.32)",
           backgroundImage:
-            "linear-gradient(45deg, transparent 50%, rgba(239,233,221,0.6) 50%), linear-gradient(135deg, rgba(239,233,221,0.6) 50%, transparent 50%)",
+            "linear-gradient(45deg, transparent 50%, rgba(var(--l-bg-rgb),0.6) 50%), linear-gradient(135deg, rgba(var(--l-bg-rgb),0.6) 50%, transparent 50%)",
           backgroundPosition: "calc(100% - 12px) calc(50% + 2px), calc(100% - 6px) calc(50% + 2px)",
           backgroundSize: "6px 6px, 6px 6px",
           backgroundRepeat: "no-repeat",

@@ -43,8 +43,40 @@
   --background: var(--l-bg);
   --accent: var(--l-ink);
 
+  --l-bg-rgb: 239, 233, 221;
+  --l-ink-rgb: 20, 20, 20;
+
   background: var(--l-bg);
   color: var(--l-ink);
+}
+
+/* Versión Mar — Costa y horizonte. Override de tokens .l-page con azules del logo Mar. */
+.l-page.l-page-mar {
+  --l-bg: #E8EFF5;
+  --l-bg-deep: #D6E2EC;
+  --l-ink: #0E2A4A;
+  --l-ink-soft: #28456A;
+  --l-mustard: #2E5EAA;
+  --l-mustard-deep: #1E4582;
+  --l-olive: #4A6E84;
+  --l-rule: rgba(14, 20, 35, 0.12);
+  --l-rule-strong: rgba(14, 20, 35, 0.32);
+  --l-muted: #5A6E84;
+
+  --l-bg-rgb: 232, 239, 245;
+  --l-ink-rgb: 14, 42, 74;
+}
+
+.l-page.l-page-mar .l-dark {
+  --l-bg: #0B1D33;
+  --l-bg-deep: #07142A;
+  --l-ink: #E8EFF5;
+  --l-ink-soft: #C2D1E0;
+  --l-rule: rgba(232, 239, 245, 0.14);
+  --l-rule-strong: rgba(232, 239, 245, 0.36);
+  --l-muted: #8FA6BD;
+
+  --l-bg-rgb: 11, 29, 51;
 }
 
 .l-page .l-dark {
@@ -55,6 +87,8 @@
   --l-rule: rgba(239, 233, 221, 0.14);
   --l-rule-strong: rgba(239, 233, 221, 0.36);
   --l-muted: #9C9283;
+
+  --l-bg-rgb: 20, 20, 20;
 
   --background: var(--l-bg);
   --accent: var(--l-ink);
@@ -312,6 +346,7 @@ em, i {
 ::selection { background: rgba(255, 107, 53, 0.3); color: #1E3A5F; }
 .slide-dark ::selection { color: #F7EFE0; }
 .ruta-b ::selection { background: rgba(198, 74, 26, 0.3); color: #1E3A5F; }
+.l-page-mar ::selection { background: rgba(46, 94, 170, 0.3); color: #E8EFF5; }
 
 .material-symbols-outlined {
   font-family: "Material Symbols Outlined";

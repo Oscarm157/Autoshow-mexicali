@@ -4,10 +4,19 @@ import Image from "next/image";
 import { motion } from "motion/react";
 import { event, hero, brands } from "@/lib/landing-content";
 import { BrandMark } from "./brand-mark";
+import { useEdition } from "./edition-context";
 
 const heroBrands = brands.filter((b) => b.tier === "hero");
 
 export function Hero() {
+  const { version } = useEdition();
+  const heroImage =
+    version === "mar" ? "/hero/hero-coast.webp" : "/hero/hero-road.webp";
+  const heroAlt =
+    version === "mar"
+      ? "Carretera de Baja California rumbo a Ensenada"
+      : "Carretera de Baja California al atardecer";
+
   return (
     <section
       id="top"
@@ -15,8 +24,9 @@ export function Hero() {
     >
       <div className="absolute inset-0 z-0">
         <Image
-          src="/hero/hero-road.webp"
-          alt="Carretera de Baja California al atardecer"
+          key={heroImage}
+          src={heroImage}
+          alt={heroAlt}
           fill
           priority
           sizes="100vw"
@@ -26,7 +36,7 @@ export function Hero() {
           className="absolute inset-0"
           style={{
             background:
-              "linear-gradient(180deg, rgba(239,233,221,0.97) 0%, rgba(239,233,221,0.85) 50%, rgba(239,233,221,0.5) 75%, rgba(239,233,221,0.85) 100%)",
+              "linear-gradient(180deg, rgba(var(--l-bg-rgb),0.97) 0%, rgba(var(--l-bg-rgb),0.85) 50%, rgba(var(--l-bg-rgb),0.5) 75%, rgba(var(--l-bg-rgb),0.85) 100%)",
           }}
         />
       </div>
@@ -149,7 +159,7 @@ export function Hero() {
         <div
           className="relative z-10 border-t"
           style={{
-            background: "rgba(20,20,20,0.94)",
+            background: "rgba(var(--l-ink-rgb),0.94)",
             color: "var(--l-bg)",
             borderColor: "var(--l-mustard)",
           }}
@@ -163,7 +173,7 @@ export function Hero() {
             </span>
             <span
               className="hidden md:block w-px h-7"
-              style={{ background: "rgba(239,233,221,0.2)" }}
+              style={{ background: "rgba(var(--l-bg-rgb),0.2)" }}
             />
             <div className="flex flex-wrap items-center gap-x-10 gap-y-4 flex-1">
               {heroBrands.map((b) => (

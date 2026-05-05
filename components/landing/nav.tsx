@@ -22,7 +22,7 @@ export function Nav() {
       transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
       className="fixed top-0 md:top-9 inset-x-0 z-40"
       style={{
-        background: scrolled ? "rgba(239, 233, 221, 0.92)" : "transparent",
+        background: scrolled ? "rgba(var(--l-bg-rgb), 0.92)" : "transparent",
         backdropFilter: scrolled ? "blur(8px) saturate(120%)" : "none",
         borderBottom: scrolled ? "1px solid var(--l-rule)" : "1px solid transparent",
         transition: "background 280ms ease, border-color 280ms ease, backdrop-filter 280ms ease",

@@ -13,25 +13,31 @@ import { Faq } from "@/components/landing/faq";
 import { Registro } from "@/components/landing/registro";
 import { Footer } from "@/components/landing/footer";
 import { FloatingCta } from "@/components/landing/floating-cta";
+import { EditionProvider } from "@/components/landing/edition-context";
+import { EditionShell } from "@/components/landing/edition-shell";
+import { EditionToggle } from "@/components/landing/edition-toggle";
 
 export default function Page() {
   return (
-    <main className="l-page min-h-screen">
-      <StickyBar />
-      <Nav />
-      <Hero />
-      <About />
-      <Concepto />
-      <Experiencias />
-      <Ruta />
-      <Lineup />
-      <Actividades />
-      <Sponsors />
-      <Galeria />
-      <Faq />
-      <Registro />
-      <Footer />
-      <FloatingCta />
-    </main>
+    <EditionProvider>
+      <EditionShell>
+        <EditionToggle />
+        <StickyBar />
+        <Nav />
+        <Hero />
+        <About />
+        <Concepto />
+        <Experiencias />
+        <Ruta />
+        <Lineup />
+        <Actividades />
+        <Sponsors />
+        <Galeria />
+        <Faq />
+        <Registro />
+        <Footer />
+        <FloatingCta />
+      </EditionShell>
+    </EditionProvider>
   );
 }
