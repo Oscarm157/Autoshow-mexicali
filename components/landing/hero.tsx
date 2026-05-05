@@ -45,7 +45,7 @@ export function Hero() {
 
       <div
         aria-hidden
-        className="pointer-events-none absolute -bottom-32 -right-32 md:-bottom-40 md:-right-40 z-[1] opacity-[0.10]"
+        className="pointer-events-none absolute -bottom-32 -right-32 md:-bottom-40 md:-right-40 z-[1] opacity-[0.20]"
         style={{
           width: "min(680px, 70vw)",
           height: "min(680px, 70vw)",

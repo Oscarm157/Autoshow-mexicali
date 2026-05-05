@@ -30,7 +30,7 @@ export function Registro() {
       <div className="absolute inset-0 pointer-events-none l-grid-bg opacity-50" aria-hidden />
       <div
         aria-hidden
-        className="pointer-events-none absolute -top-24 -left-24 md:-top-32 md:-left-32 opacity-[0.07]"
+        className="pointer-events-none absolute -top-24 -left-24 md:-top-32 md:-left-32 opacity-[0.14]"
         style={{
           width: "min(560px, 60vw)",
           height: "min(560px, 60vw)",

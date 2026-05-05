@@ -40,7 +40,7 @@ export function Nav() {
           backgroundRepeat: "no-repeat",
           backgroundPosition: "right center",
           backgroundSize: "auto 220%",
-          opacity: scrolled ? 0.07 : 0.12,
+          opacity: scrolled ? 0.14 : 0.22,
         }}
       />
       <div className="relative max-w-[1320px] mx-auto px-6 md:px-10 h-16 md:h-20 flex items-center justify-between">
