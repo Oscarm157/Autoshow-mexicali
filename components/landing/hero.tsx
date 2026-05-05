@@ -138,7 +138,7 @@ export function Hero() {
                 color: "var(--l-bg)",
               }}
             >
-              <span className="l-eyebrow" style={{ color: "var(--l-mustard)" }}>
+              <span className="l-eyebrow" style={{ color: "var(--l-bg)" }}>
                 {event.ctaPrimary}
               </span>
               <span aria-hidden className="transition-transform group-hover:translate-x-1">

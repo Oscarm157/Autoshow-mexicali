@@ -50,10 +50,10 @@
   color: var(--l-ink);
 }
 
-/* Versión Mar — Costa y horizonte. Override de tokens .l-page con azules del logo Mar. */
+/* Versión Mar — Costa y horizonte. Tinta y acentos en azul, fondos en gris claro neutro para equilibrar. */
 .l-page.l-page-mar {
-  --l-bg: #E8EFF5;
-  --l-bg-deep: #D6E2EC;
+  --l-bg: #EDEEF0;
+  --l-bg-deep: #DDDFE3;
   --l-ink: #0E2A4A;
   --l-ink-soft: #28456A;
   --l-mustard: #2E5EAA;
@@ -63,18 +63,20 @@
   --l-rule-strong: rgba(14, 20, 35, 0.32);
   --l-muted: #5A6E84;
 
-  --l-bg-rgb: 232, 239, 245;
+  --l-bg-rgb: 237, 238, 240;
   --l-ink-rgb: 14, 42, 74;
 }
 
 .l-page.l-page-mar .l-dark {
   --l-bg: #0B1D33;
   --l-bg-deep: #07142A;
-  --l-ink: #E8EFF5;
-  --l-ink-soft: #C2D1E0;
-  --l-rule: rgba(232, 239, 245, 0.14);
-  --l-rule-strong: rgba(232, 239, 245, 0.36);
-  --l-muted: #8FA6BD;
+  --l-ink: #EDEEF0;
+  --l-ink-soft: #C8CACE;
+  --l-mustard: #D4A85F;
+  --l-mustard-deep: #B58A40;
+  --l-rule: rgba(237, 238, 240, 0.14);
+  --l-rule-strong: rgba(237, 238, 240, 0.36);
+  --l-muted: #8FA0B2;
 
   --l-bg-rgb: 11, 29, 51;
 }

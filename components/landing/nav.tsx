@@ -70,7 +70,7 @@ export function Nav() {
               color: "var(--l-bg)",
             }}
           >
-            <span className="l-eyebrow" style={{ color: "var(--l-mustard)" }}>
+            <span className="l-eyebrow" style={{ color: "var(--l-bg)" }}>
               {nav.cta}
             </span>
             <span aria-hidden className="transition-transform group-hover:translate-x-0.5">→</span>
