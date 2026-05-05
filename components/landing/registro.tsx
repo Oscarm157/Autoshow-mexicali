@@ -4,10 +4,14 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { Reveal, RevealStack, RevealItem } from "./reveal";
 import { registro, event } from "@/lib/landing-content";
+import { useEdition } from "./edition-context";
 
 export function Registro() {
   const [submitted, setSubmitted] = useState(false);
   const [submitting, setSubmitting] = useState(false);
+  const { version } = useEdition();
+  const editionLogo =
+    version === "mar" ? "/autoshow-logo-azul.png" : "/autoshow-logo-arena.png";
 
   const onSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -24,6 +28,18 @@ export function Registro() {
       className="py-24 md:py-36 relative overflow-hidden"
     >
       <div className="absolute inset-0 pointer-events-none l-grid-bg opacity-50" aria-hidden />
+      <div
+        aria-hidden
+        className="pointer-events-none absolute -top-24 -left-24 md:-top-32 md:-left-32 opacity-[0.07]"
+        style={{
+          width: "min(560px, 60vw)",
+          height: "min(560px, 60vw)",
+          backgroundImage: `url(${editionLogo})`,
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center",
+          backgroundSize: "contain",
+        }}
+      />
 
       <div className="relative max-w-[1320px] mx-auto px-6 md:px-10">
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.2fr] gap-14 lg:gap-24 items-start">

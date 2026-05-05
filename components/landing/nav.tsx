@@ -3,10 +3,14 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { nav, event } from "@/lib/landing-content";
+import { useEdition } from "./edition-context";
 
 export function Nav() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  const { version } = useEdition();
+  const editionLogo =
+    version === "mar" ? "/autoshow-logo-azul.png" : "/autoshow-logo-arena.png";
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24);
@@ -28,7 +32,18 @@ export function Nav() {
         transition: "background 280ms ease, border-color 280ms ease, backdrop-filter 280ms ease",
       }}
     >
-      <div className="max-w-[1320px] mx-auto px-6 md:px-10 h-16 md:h-20 flex items-center justify-between">
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 transition-opacity duration-300"
+        style={{
+          backgroundImage: `url(${editionLogo})`,
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "right center",
+          backgroundSize: "auto 220%",
+          opacity: scrolled ? 0.07 : 0.12,
+        }}
+      />
+      <div className="relative max-w-[1320px] mx-auto px-6 md:px-10 h-16 md:h-20 flex items-center justify-between">
         <a href="#top" className="flex items-center gap-3 group">
           <span
             className="l-display text-[18px] md:text-[20px]"

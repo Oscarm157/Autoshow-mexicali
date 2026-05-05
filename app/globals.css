@@ -52,8 +52,8 @@
 
 /* Versión Mar — Costa y horizonte. Tinta y acentos en azul, fondos en gris claro neutro para equilibrar. */
 .l-page.l-page-mar {
-  --l-bg: #EDEEF0;
-  --l-bg-deep: #DDDFE3;
+  --l-bg: #ECECEC;
+  --l-bg-deep: #DBDBDB;
   --l-ink: #0E2A4A;
   --l-ink-soft: #28456A;
   --l-mustard: #2E5EAA;
@@ -63,7 +63,7 @@
   --l-rule-strong: rgba(14, 20, 35, 0.32);
   --l-muted: #5A6E84;
 
-  --l-bg-rgb: 237, 238, 240;
+  --l-bg-rgb: 236, 236, 236;
   --l-ink-rgb: 14, 42, 74;
 }
 
