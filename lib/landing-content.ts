@@ -27,7 +27,7 @@ export const stickyBar = {
 
 export const hero = {
   badge: "Mexicali · 14 de noviembre, 2026",
-  headline: "El Auto Show familiar de Mexicali.",
+  headline: "El Auto Show familiar de la Baja.",
   subhead:
     "Pasa el día con la familia. Los modelos más nuevos, las mejores marcas automotrices de Mexicali y diversión para los niños. La entrada no se paga.",
   meta: [
