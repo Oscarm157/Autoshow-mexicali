@@ -37,7 +37,7 @@ export function Footer() {
         </div>
 
         <div
-          className="grid grid-cols-2 md:grid-cols-4 gap-8 py-8"
+          className="grid grid-cols-2 md:grid-cols-3 gap-8 py-8"
           style={{
             borderTop: "1px solid var(--l-rule-strong)",
             borderBottom: "1px solid var(--l-rule-strong)",
@@ -54,13 +54,6 @@ export function Footer() {
             <FooterLink href="#lineup">Lineup completo</FooterLink>
             <FooterLink href="#patrocinadores">Patrocinadores</FooterLink>
             <FooterLink href="#registro">Regístrate gratis</FooterLink>
-          </FooterCol>
-          <FooterCol title="Redes">
-            {footer.links.map((l) => (
-              <FooterLink key={l.label} href={l.href}>
-                {l.label}
-              </FooterLink>
-            ))}
           </FooterCol>
           <FooterCol title="Producción">
             <span className="l-mono text-[12px] tracking-[0.06em] uppercase" style={{ color: "var(--l-ink)" }}>
