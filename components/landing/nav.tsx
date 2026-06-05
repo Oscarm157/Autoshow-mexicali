@@ -4,14 +4,11 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "motion/react";
 import { nav, event } from "@/lib/landing-content";
-import { useEdition } from "./edition-context";
 
 export function Nav() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
-  const { version } = useEdition();
-  const editionLogo =
-    version === "mar" ? "/autoshow-logo-azul.png" : "/autoshow-logo-arena.png";
+  const editionLogo = "/autoshow-logo-arena.png";
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24);
@@ -36,7 +33,6 @@ export function Nav() {
       <div className="max-w-[1320px] mx-auto px-6 md:px-10 h-20 md:h-24 flex items-center justify-between">
         <a href="#top" className="flex items-center gap-3 group" aria-label={event.brand}>
           <Image
-            key={editionLogo}
             src={editionLogo}
             alt={event.brand}
             width={240}

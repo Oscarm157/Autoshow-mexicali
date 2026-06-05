@@ -227,20 +227,12 @@ export const faq = {
       a: "Si te registras aquí, el acceso al museo durante el evento queda incluido sin costo. Si no te registras, aplica la tarifa normal del museo.",
     },
     {
-      q: "¿Hay food trucks o servicio de alimentos?",
-      a: "[POR CONFIRMAR]. La oferta gastronómica se publica con el programa final.",
-    },
-    {
       q: "¿Puedo probar los autos?",
       a: "Sí, con las marcas que tengan zona de prueba de manejo. Cada marca define sus dinámicas durante el evento.",
     },
     {
       q: "¿Habrá ediciones en otras ciudades?",
       a: "Sí. La idea es que el evento se mueva a Tijuana y posteriormente a Ensenada. Las fechas se anuncian al cierre de cada edición.",
-    },
-    {
-      q: "¿Cómo participo como expositor o patrocinador?",
-      a: "Escríbenos a Bravo Publicidad. El cierre comercial se define caso por caso.",
     },
   ],
 };
@@ -280,11 +272,6 @@ export const footer = {
   cityLine: "Mexicali, Baja California",
   hashtag: "#AutoShowBaja2026",
   closing: "Mexicali, 14 de noviembre. Te esperamos.",
-  links: [
-    { label: "Instagram", href: "#" },
-    { label: "Facebook", href: "#" },
-    { label: "Contacto", href: "#" },
-  ],
 };
 
 export const nav = {

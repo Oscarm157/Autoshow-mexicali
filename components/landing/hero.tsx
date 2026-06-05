@@ -4,18 +4,12 @@ import Image from "next/image";
 import { motion } from "motion/react";
 import { event, hero, brands } from "@/lib/landing-content";
 import { BrandMark } from "./brand-mark";
-import { useEdition } from "./edition-context";
 
 const heroBrands = brands.filter((b) => b.tier === "hero");
 
 export function Hero() {
-  const { version } = useEdition();
-  const heroImage =
-    version === "mar" ? "/hero/hero-coast.webp" : "/hero/hero-road.webp";
-  const heroAlt =
-    version === "mar"
-      ? "Carretera de Baja California rumbo a Ensenada"
-      : "Carretera de Baja California al atardecer";
+  const heroImage = "/hero/hero-road.webp";
+  const heroAlt = "Carretera de Baja California al atardecer";
 
   return (
     <section
@@ -24,7 +18,6 @@ export function Hero() {
     >
       <div className="absolute inset-0 z-0">
         <Image
-          key={heroImage}
           src={heroImage}
           alt={heroAlt}
           fill
